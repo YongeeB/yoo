@@ -16,26 +16,53 @@
             src:  "/tie-dye.jpg",
         },
         {
-            name: "Yoo Photography",
+            name: "Yoo Aesthetics",
             src:  "/camera.jpg",
         },
         {
-            name: "Yoo Photography",
+            name: "Yoo Stitches",
             src:  "/camera.jpg",
         },
         {
-            name: "Yoo Photography",
+            name: "Yoo Resin",
             src:  "/camera.jpg",
         },
         {
-            name: "Yoo Photography",
+            name: "Yoo Brand",
             src:  "/camera.jpg",
         },
         {
-            name: "Yoo Photography",
+            name: "Yoo Sculptures",
             src:  "/camera.jpg",
         },
-        
+        {
+            name: "Yoo Graphic design",
+            src:  "/camera.jpg",
+        },
+        {
+            name: "Yoo Seed And Grains",
+            src:  "/camera.jpg",
+        },
+        {
+            name: "Yoo Paws",
+            src:  "/camera.jpg",
+        },
+         {
+            name: "Yoo Scribblings",
+            src:  "/camera.jpg",
+        },
+         {
+            name: "Yoo Embroidery",
+            src:  "/camera.jpg",
+        },
+         {
+            name: "Yoo Pottery",
+            src:  "/camera.jpg",
+        },
+         {
+            name: "Yoo Batiks",
+            src:  "/camera.jpg",
+        },
     ]
 
 
