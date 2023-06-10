@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --primary-background: #fff;
+  --primary-color: orange;
+  --secondary-background: #000;
+  --secondary-color: antiquewite;
+}
+
+:global(:root[data-theme="light"]) {
+  background-color: var(--primary-background);
+}
+
+:global(:root[data-theme="dark"]) {
+  background-color: var(--secondary-background);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+}
+.container {
+  margin: 1em;
+}
