@@ -703,7 +703,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.0110f28b.js", "_app/immutable/chunks/index.2b6a9462.js", "_app/immutable/chunks/singletons.878b2ea3.js"];
+    imports2 = ["_app/immutable/nodes/1.883b0508.js", "_app/immutable/chunks/index.2b6a9462.js", "_app/immutable/chunks/singletons.205651f2.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1101,19 +1101,19 @@ ${validate_component(Src, "Lazy").$$render($$result, { height: "300px" }, {}, {
     });
     moonO = { "moon-o": { "width": 1536, "height": 1792, "paths": [{ "d": "M1262 1303q-54 9-110 9-182 0-337-90t-245-245-90-337q0-192 104-357-201 60-328.5 229t-127.5 384q0 130 51 248.5t136.5 204 204 136.5 248.5 51q144 0 273.5-61.5t220.5-171.5zM1465 1218q-94 203-283.5 324.5t-413.5 121.5q-156 0-298-61t-245-164-164-245-61-298q0-153 57.5-292.5t156-241.5 235.5-164.5 290-68.5q44-2 61 39 18 41-15 72-86 78-131.5 181.5t-45.5 218.5q0 148 73 273t198 198 273 73q118 0 228-51 41-18 72 13 14 14 17.5 34t-4.5 38z" }] } };
     css = {
-      code: ":root[data-theme='light']{background-color:var(--primary-background)}:root[data-theme='dark']{background-color:var(--secondary-background);color:antiquewhite}.nav-container.svelte-tfphu7.svelte-tfphu7{position:relative;display:flex;align-items:center;justify-content:space-between;font-size:1em;font-family:'Fira Code', monospace}.nav-container.svelte-tfphu7 .header.svelte-tfphu7{flex-basis:10%;text-align:left}.header.svelte-tfphu7 h1.svelte-tfphu7{color:var(--primary-color)}.nav-container.svelte-tfphu7 .nav-links.svelte-tfphu7{display:flex;justify-content:space-around;flex-basis:85%;width:100%;margin-right:10px}.nav-links.svelte-tfphu7 nav.svelte-tfphu7{padding:5px 7px;font-weight:bold;text-transform:capitalize;cursor:pointer}.nav-links.svelte-tfphu7 nav.svelte-tfphu7:hover{color:var(--primary-color)}.nav-links.svelte-tfphu7 #active.svelte-tfphu7{background-color:var(--primary-color);border-radius:5px;color:black}.nav-links.svelte-tfphu7 #active.svelte-tfphu7:hover{color:#000}.theme.svelte-tfphu7.svelte-tfphu7{flex-basis:5%;display:flex;justify-content:center;align-items:center}@media(width < 550px){.nav-container.svelte-tfphu7 .header.svelte-tfphu7{display:none}.nav-container.svelte-tfphu7 .nav-links.svelte-tfphu7{flex-basis:80%}.theme.svelte-tfphu7.svelte-tfphu7{flex-basis:5%}}",
+      code: ":root[data-theme='light']{background-color:var(--primary-background)}:root[data-theme='dark']{background-color:var(--secondary-background);color:antiquewhite}.nav-container.svelte-zg0xo2.svelte-zg0xo2{position:relative;display:flex;align-items:center;justify-content:space-between;font-family:'Fira Code', monospace}.nav-container.svelte-zg0xo2 .header.svelte-zg0xo2{flex-basis:10%;text-align:left}.header.svelte-zg0xo2 h1.svelte-zg0xo2{color:var(--primary-color)}.nav-container.svelte-zg0xo2 .nav-links.svelte-zg0xo2{display:flex;justify-content:space-around;flex-basis:85%;width:100%;margin-right:10px}.nav-links.svelte-zg0xo2 nav.svelte-zg0xo2{padding:5px;font-size:12px;font-weight:bold;text-transform:capitalize;cursor:pointer}.nav-links.svelte-zg0xo2 nav.svelte-zg0xo2:hover{color:var(--primary-color)}.nav-links.svelte-zg0xo2 #active.svelte-zg0xo2{background-color:var(--primary-color);border-radius:5px;color:black}.nav-links.svelte-zg0xo2 #active.svelte-zg0xo2:hover{color:#000}.theme.svelte-zg0xo2.svelte-zg0xo2{flex-basis:5%;display:flex;justify-content:center;align-items:center}@media(width < 550px){.nav-container.svelte-zg0xo2 .header.svelte-zg0xo2{display:none}.nav-container.svelte-zg0xo2 .nav-links.svelte-zg0xo2{flex-basis:80%}.theme.svelte-zg0xo2.svelte-zg0xo2{flex-basis:5%}}",
       map: null
     };
     NavigationBar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css);
-      return `<div class="nav-container svelte-tfphu7"><div class="header svelte-tfphu7"><header><h1 class="svelte-tfphu7">Yoo</h1></header></div>
-    <div class="nav-links svelte-tfphu7"><nav id="active" class="svelte-tfphu7">home</nav>
-        <nav class="svelte-tfphu7">stores</nav>
-        <nav class="svelte-tfphu7">order</nav>
-        <nav class="svelte-tfphu7">contact</nav>
-        <nav class="svelte-tfphu7">info</nav></div>
+      return `<div class="nav-container svelte-zg0xo2"><div class="header svelte-zg0xo2"><header><h1 class="svelte-zg0xo2">Yoo</h1></header></div>
+    <div class="nav-links svelte-zg0xo2"><nav id="active" class="svelte-zg0xo2">home</nav>
+        <nav class="svelte-zg0xo2">stores</nav>
+        <nav class="svelte-zg0xo2">order</nav>
+        <nav class="svelte-zg0xo2">contact</nav>
+        <nav class="svelte-zg0xo2">info</nav></div>
     
-    <div class="theme svelte-tfphu7">${validate_component(Icon, "Icon").$$render($$result, { data: moonO, scale: "1.5" }, {}, {})}</div>
+    <div class="theme svelte-zg0xo2">${validate_component(Icon, "Icon").$$render($$result, { data: moonO, scale: "1.5" }, {}, {})}</div>
 </div>`;
     });
     Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1142,8 +1142,8 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.js";
-    imports3 = ["_app/immutable/nodes/2.9074097d.js", "_app/immutable/chunks/index.2b6a9462.js"];
-    stylesheets3 = ["_app/immutable/assets/2.0a2366d8.css"];
+    imports3 = ["_app/immutable/nodes/2.c8e6eda0.js", "_app/immutable/chunks/index.2b6a9462.js"];
+    stylesheets3 = ["_app/immutable/assets/2.5cc0b929.css"];
     fonts3 = [];
   }
 });
@@ -1314,7 +1314,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "h9t9wx"
+  version_hash: "mrnna2"
 };
 function get_hooks() {
   return {};
@@ -4617,7 +4617,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["camera.jpg", "favicon.png", "painting.jpg", "tie-dye.jpg"]),
   mimeTypes: { ".jpg": "image/jpeg", ".png": "image/png" },
   _: {
-    client: { "start": "_app/immutable/entry/start.9c67b866.js", "app": "_app/immutable/entry/app.73a6c7ce.js", "imports": ["_app/immutable/entry/start.9c67b866.js", "_app/immutable/chunks/index.2b6a9462.js", "_app/immutable/chunks/singletons.878b2ea3.js", "_app/immutable/entry/app.73a6c7ce.js", "_app/immutable/chunks/index.2b6a9462.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.ebdbc0fe.js", "app": "_app/immutable/entry/app.9c989481.js", "imports": ["_app/immutable/entry/start.ebdbc0fe.js", "_app/immutable/chunks/index.2b6a9462.js", "_app/immutable/chunks/singletons.205651f2.js", "_app/immutable/entry/app.9c989481.js", "_app/immutable/chunks/index.2b6a9462.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
