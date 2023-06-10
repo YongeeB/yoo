@@ -703,7 +703,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.987c5a6f.js", "_app/immutable/chunks/index.2b6a9462.js", "_app/immutable/chunks/singletons.3104dff8.js"];
+    imports2 = ["_app/immutable/nodes/1.06661319.js", "_app/immutable/chunks/index.2b6a9462.js", "_app/immutable/chunks/singletons.88a2c598.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -806,7 +806,7 @@ var init_page_svelte = __esm({
 </div>`;
     });
     css$3 = {
-      code: ".cards-container.svelte-1dzc8xk.svelte-1dzc8xk{display:flex;flex-direction:column}img.svelte-1dzc8xk.svelte-1dzc8xk{width:90%;max-width:400px;margin-bottom:1em;border-radius:20px}.card-container.svelte-1dzc8xk.svelte-1dzc8xk{margin-bottom:1em}.cards-container.svelte-1dzc8xk .image-container.svelte-1dzc8xk{padding-top:10px;display:flex;justify-content:center}#title.svelte-1dzc8xk.svelte-1dzc8xk{cursor:pointer;color:orange;font-size:1.5em;text-align:center;margin-bottom:10px}#title.svelte-1dzc8xk.svelte-1dzc8xk:hover{text-decoration:underline}#contents.svelte-1dzc8xk.svelte-1dzc8xk{font-family:cursive;padding:20px;line-height:1.5em}@media(min-width: 800px){.cards-container.svelte-1dzc8xk.svelte-1dzc8xk{display:flex;justify-content:center}.grid.svelte-1dzc8xk.svelte-1dzc8xk{display:grid;grid-template-columns:1fr 1fr}.image-container.svelte-1dzc8xk.svelte-1dzc8xk{align-self:center}}@media(min-width: 1150px){.grid.svelte-1dzc8xk.svelte-1dzc8xk{grid-template-columns:1fr 1fr 1fr}}",
+      code: ".cards-container.svelte-9revld.svelte-9revld{display:flex;flex-direction:column}img.svelte-9revld.svelte-9revld{width:90%;max-width:400px;margin-bottom:1em;border-radius:20px}.card-container.svelte-9revld.svelte-9revld{margin-bottom:1em}.cards-container.svelte-9revld .image-container.svelte-9revld{padding-top:10px;display:flex;justify-content:center}#title.svelte-9revld.svelte-9revld{cursor:pointer;color:orange;font-size:1.5em;text-align:center;margin-bottom:10px}#title.svelte-9revld.svelte-9revld:hover{text-decoration:underline}#contents.svelte-9revld.svelte-9revld{font-family:'Fira Code', monospace;padding:20px;line-height:1.5em}@media(min-width: 800px){.cards-container.svelte-9revld.svelte-9revld{display:flex;justify-content:center}.grid.svelte-9revld.svelte-9revld{display:grid;grid-template-columns:1fr 1fr}.image-container.svelte-9revld.svelte-9revld{align-self:center}}@media(min-width: 1150px){.grid.svelte-9revld.svelte-9revld{grid-template-columns:1fr 1fr 1fr}}",
       map: null
     };
     Card = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -824,38 +824,48 @@ var init_page_svelte = __esm({
           src: "/tie-dye.jpg"
         },
         {
-          name: "Yoo Photography",
+          name: "Yoo Aesthetics",
+          src: "/camera.jpg"
+        },
+        { name: "Yoo Stitches", src: "/camera.jpg" },
+        { name: "Yoo Resin", src: "/camera.jpg" },
+        { name: "Yoo Brand", src: "/camera.jpg" },
+        {
+          name: "Yoo Sculptures",
           src: "/camera.jpg"
         },
         {
-          name: "Yoo Photography",
+          name: "Yoo Graphic design",
           src: "/camera.jpg"
         },
         {
-          name: "Yoo Photography",
+          name: "Yoo Seed And Grains",
+          src: "/camera.jpg"
+        },
+        { name: "Yoo Paws", src: "/camera.jpg" },
+        {
+          name: "Yoo Scribblings",
           src: "/camera.jpg"
         },
         {
-          name: "Yoo Photography",
+          name: "Yoo Embroidery",
           src: "/camera.jpg"
         },
-        {
-          name: "Yoo Photography",
-          src: "/camera.jpg"
-        }
+        { name: "Yoo Pottery", src: "/camera.jpg" },
+        { name: "Yoo Batiks", src: "/camera.jpg" }
       ];
       $$result.css.add(css$3);
-      return `<div class="cards-container svelte-1dzc8xk"><div class="grid svelte-1dzc8xk">${each(images, (image) => {
-        return `<div class="card-container svelte-1dzc8xk">
-<div class="image-container svelte-1dzc8xk">
+      return `<div class="cards-container svelte-9revld"><div class="grid svelte-9revld">${each(images, (image) => {
+        return `<div class="card-container svelte-9revld">
+<div class="image-container svelte-9revld">
 ${validate_component(Src, "Lazy").$$render($$result, { height: "300px" }, {}, {
           default: () => {
-            return `<img${add_attribute("src", image.src, 0)}${add_attribute("alt", image.name, 0)} class="svelte-1dzc8xk">
+            return `<img${add_attribute("src", image.src, 0)}${add_attribute("alt", image.name, 0)} class="svelte-9revld">
 `;
           }
         })}</div>
-<h3 id="title" class="svelte-1dzc8xk">${escape(image.name)}</h3>
-<p id="contents" class="svelte-1dzc8xk">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque magnam maxime optio tempore, quia, nisi deleniti soluta enim fugiat molestiae possimus natus fugit itaque quam architecto adipisci voluptatum a! Porro deserunt alias repellat eum quibusdam eius officia dolorum id ipsa.</p>
+<h3 id="title" class="svelte-9revld">${escape(image.name)}</h3>
+<p id="contents" class="svelte-9revld">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque magnam maxime optio tempore, quia, nisi deleniti soluta enim fugiat molestiae possimus natus fugit itaque quam architecto adipisci voluptatum a! Porro deserunt alias repellat eum quibusdam eius officia dolorum id ipsa.</p>
 </div>`;
       })}</div>
 </div>`;
@@ -1091,19 +1101,19 @@ ${validate_component(Src, "Lazy").$$render($$result, { height: "300px" }, {}, {
     });
     moonO = { "moon-o": { "width": 1536, "height": 1792, "paths": [{ "d": "M1262 1303q-54 9-110 9-182 0-337-90t-245-245-90-337q0-192 104-357-201 60-328.5 229t-127.5 384q0 130 51 248.5t136.5 204 204 136.5 248.5 51q144 0 273.5-61.5t220.5-171.5zM1465 1218q-94 203-283.5 324.5t-413.5 121.5q-156 0-298-61t-245-164-164-245-61-298q0-153 57.5-292.5t156-241.5 235.5-164.5 290-68.5q44-2 61 39 18 41-15 72-86 78-131.5 181.5t-45.5 218.5q0 148 73 273t198 198 273 73q118 0 228-51 41-18 72 13 14 14 17.5 34t-4.5 38z" }] } };
     css = {
-      code: ":root[data-theme='light']{background-color:var(--primary-background)}:root[data-theme='dark']{background-color:var(--secondary-background);color:antiquewhite}.nav-container.svelte-1lwrujv.svelte-1lwrujv{position:relative;display:flex;align-items:center;justify-content:space-between;font-family:cursive}.nav-container.svelte-1lwrujv .header.svelte-1lwrujv{flex-basis:10%;text-align:left}.header.svelte-1lwrujv h1.svelte-1lwrujv{color:var(--primary-color)}.nav-container.svelte-1lwrujv .nav-links.svelte-1lwrujv{display:flex;justify-content:space-around;flex-basis:85%;width:100%;margin-right:10px}.nav-links.svelte-1lwrujv nav.svelte-1lwrujv{padding:5px 7px;font-weight:bold;text-transform:capitalize;cursor:pointer}.nav-links.svelte-1lwrujv nav.svelte-1lwrujv:hover{color:var(--primary-color)}.nav-links.svelte-1lwrujv #active.svelte-1lwrujv{background-color:var(--primary-color);border-radius:5px;color:black}.nav-links.svelte-1lwrujv #active.svelte-1lwrujv:hover{color:#000}.theme.svelte-1lwrujv.svelte-1lwrujv{flex-basis:5%;display:flex;justify-content:center;align-items:center}@media(width < 550px){.nav-container.svelte-1lwrujv .header.svelte-1lwrujv{display:none}.nav-container.svelte-1lwrujv .nav-links.svelte-1lwrujv{flex-basis:80%}.theme.svelte-1lwrujv.svelte-1lwrujv{flex-basis:5%}}",
+      code: ":root[data-theme='light']{background-color:var(--primary-background)}:root[data-theme='dark']{background-color:var(--secondary-background);color:antiquewhite}.nav-container.svelte-skixo6.svelte-skixo6{position:relative;display:flex;align-items:center;justify-content:space-between;font-family:'Fira Code', monospace}.nav-container.svelte-skixo6 .header.svelte-skixo6{flex-basis:10%;text-align:left}.header.svelte-skixo6 h1.svelte-skixo6{color:var(--primary-color)}.nav-container.svelte-skixo6 .nav-links.svelte-skixo6{display:flex;justify-content:space-around;flex-basis:85%;width:100%;margin-right:10px}.nav-links.svelte-skixo6 nav.svelte-skixo6{padding:5px 7px;font-weight:bold;text-transform:capitalize;cursor:pointer}.nav-links.svelte-skixo6 nav.svelte-skixo6:hover{color:var(--primary-color)}.nav-links.svelte-skixo6 #active.svelte-skixo6{background-color:var(--primary-color);border-radius:5px;color:black}.nav-links.svelte-skixo6 #active.svelte-skixo6:hover{color:#000}.theme.svelte-skixo6.svelte-skixo6{flex-basis:5%;display:flex;justify-content:center;align-items:center}@media(width < 550px){.nav-container.svelte-skixo6 .header.svelte-skixo6{display:none}.nav-container.svelte-skixo6 .nav-links.svelte-skixo6{flex-basis:80%}.theme.svelte-skixo6.svelte-skixo6{flex-basis:5%}}",
       map: null
     };
     NavigationBar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css);
-      return `<div class="nav-container svelte-1lwrujv"><div class="header svelte-1lwrujv"><header><h1 class="svelte-1lwrujv">Yoo</h1></header></div>
-    <div class="nav-links svelte-1lwrujv"><nav id="active" class="svelte-1lwrujv">home</nav>
-        <nav class="svelte-1lwrujv">stores</nav>
-        <nav class="svelte-1lwrujv">order</nav>
-        <nav class="svelte-1lwrujv">contact</nav>
-        <nav class="svelte-1lwrujv">info</nav></div>
+      return `<div class="nav-container svelte-skixo6"><div class="header svelte-skixo6"><header><h1 class="svelte-skixo6">Yoo</h1></header></div>
+    <div class="nav-links svelte-skixo6"><nav id="active" class="svelte-skixo6">home</nav>
+        <nav class="svelte-skixo6">stores</nav>
+        <nav class="svelte-skixo6">order</nav>
+        <nav class="svelte-skixo6">contact</nav>
+        <nav class="svelte-skixo6">info</nav></div>
     
-    <div class="theme svelte-1lwrujv">${validate_component(Icon, "Icon").$$render($$result, { data: moonO, scale: "1.5" }, {}, {})}</div>
+    <div class="theme svelte-skixo6">${validate_component(Icon, "Icon").$$render($$result, { data: moonO, scale: "1.5" }, {}, {})}</div>
 </div>`;
     });
     Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1132,8 +1142,8 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.js";
-    imports3 = ["_app/immutable/nodes/2.509b598f.js", "_app/immutable/chunks/index.2b6a9462.js"];
-    stylesheets3 = ["_app/immutable/assets/2.a001ab17.css"];
+    imports3 = ["_app/immutable/nodes/2.28bf1be5.js", "_app/immutable/chunks/index.2b6a9462.js"];
+    stylesheets3 = ["_app/immutable/assets/2.c250f06f.css"];
     fonts3 = [];
   }
 });
@@ -1304,7 +1314,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1a4cjbx"
+  version_hash: "1lz4pga"
 };
 function get_hooks() {
   return {};
@@ -4607,7 +4617,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["camera.jpg", "favicon.png", "painting.jpg", "tie-dye.jpg"]),
   mimeTypes: { ".jpg": "image/jpeg", ".png": "image/png" },
   _: {
-    client: { "start": "_app/immutable/entry/start.bc139e14.js", "app": "_app/immutable/entry/app.944ac420.js", "imports": ["_app/immutable/entry/start.bc139e14.js", "_app/immutable/chunks/index.2b6a9462.js", "_app/immutable/chunks/singletons.3104dff8.js", "_app/immutable/entry/app.944ac420.js", "_app/immutable/chunks/index.2b6a9462.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.6d5d938d.js", "app": "_app/immutable/entry/app.c48f5ca6.js", "imports": ["_app/immutable/entry/start.6d5d938d.js", "_app/immutable/chunks/index.2b6a9462.js", "_app/immutable/chunks/singletons.88a2c598.js", "_app/immutable/entry/app.c48f5ca6.js", "_app/immutable/chunks/index.2b6a9462.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

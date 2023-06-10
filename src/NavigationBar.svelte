@@ -58,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: cursive;
+    font-family: 'Fira Code', monospace;
    }
 
    .nav-container .header {

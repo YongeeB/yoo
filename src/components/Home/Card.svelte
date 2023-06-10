@@ -121,7 +121,7 @@
     }
 
     #contents {
-        font-family: cursive;
+        font-family: 'Fira Code', monospace;
         padding: 20px;
         line-height: 1.5em;
     }
