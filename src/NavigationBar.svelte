@@ -58,7 +58,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1em;
     font-family: 'Fira Code', monospace;
    }
 
@@ -80,7 +79,8 @@
    }
 
    .nav-links nav {
-    padding: 5px 7px;
+    padding: 5px;
+    font-size: 12px;
     font-weight: bold;
     text-transform: capitalize;
     cursor: pointer;
