@@ -1,7 +1,6 @@
 <script>
 // @ts-nocheck
     import { onMount } from "svelte";
-    // import { Icon } from "svelte-awesome";
     import  Icon from "svelte-awesome/components/Icon.svelte"
     import { moonO } from "svelte-awesome/icons";
 
@@ -28,15 +27,14 @@
 <div class="nav-container">
     <div class="header">
         <header>
-            <h1>Yoo</h1>
+            <h1>Yoo<br />Gallery</h1>
         </header>
     </div>
     <div class="nav-links">
-        <nav id="active">home</nav>
-        <nav>stores</nav>
-        <nav>order</nav>
-        <nav>contact</nav>
-        <nav>info</nav>
+        <nav id="active"><a data-sveltekit-preload-data="tap" href="/">home</a></nav>
+        <nav><a data-sveltekit-preload-data="tap" href="/">stores</a></nav>
+        <nav><a data-sveltekit-preload-data="tap" href="/">order</a></nav>
+        <nav><a data-sveltekit-preload-data="tap" href="/contact">contact</a></nav>
     </div>
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div class="theme" on:click={whiteTheme ? () => setTheme("dark") : () => setTheme("light")}>
@@ -68,6 +66,8 @@
 
    .header h1 {
     color: var(--primary-color);
+    text-align: center;
+    font-family: "Allura";
    }
 
    .nav-container .nav-links {
@@ -78,7 +78,7 @@
     margin-right: 10px;
    }
 
-   .nav-links nav {
+   .nav-links nav{
     padding: 5px;
     font-size: 12px;
     font-weight: bold;
@@ -88,6 +88,10 @@
 
    .nav-links nav:hover {
     color: var(--primary-color);
+   }
+
+   .nav-container nav a {
+    text-decoration: none;
    }
 
     .nav-links #active {
