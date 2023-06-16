@@ -703,7 +703,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.b8b35f92.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.0090cae2.js"];
+    imports2 = ["_app/immutable/nodes/1.e8d1801f.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.14b756d3.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1222,7 +1222,7 @@ var init_page_svelte2 = __esm({
 </div>`;
     });
     css$12 = {
-      code: `.form-container.svelte-nimysd.svelte-nimysd{width:100%;margin:20px 0;margin-bottom:0px;display:flex;flex-direction:column;align-items:center}input.svelte-nimysd.svelte-nimysd{caret-color:orange;padding:5px 15px;width:60%;max-width:250px;height:30px;margin:10px 0;background-color:transparent;border:1px solid var antiquewhite;font-size:1em;color:gray;font-family:"Fira Code", sans-serif;border-radius:5px}#light.svelte-nimysd input.svelte-nimysd{caret-color:#333;color:black;border:2px solid black}input.svelte-nimysd.svelte-nimysd:focus{outline:none}input.svelte-nimysd.svelte-nimysd::placeholder{color:antiquewhite;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;opacity:80%}#light.svelte-nimysd input.svelte-nimysd::placeholder{color:black;opacity:80%}button.svelte-nimysd.svelte-nimysd{width:60px;margin:10px 0;padding:7px;background-color:antiquewhite;font-size:1.1 em;border-radius:10px;border:none;font-weight:bolder;transition:all .5s linear}#light.svelte-nimysd button.svelte-nimysd:hover,button.svelte-nimysd.svelte-nimysd:hover{background-color:orange}#light.svelte-nimysd button.svelte-nimysd{background-color:black;color:#fff}`,
+      code: `.form-container.svelte-wttl3c.svelte-wttl3c{width:100%;margin:20px 0;margin-bottom:0px;display:flex;flex-direction:column;align-items:center}input.svelte-wttl3c.svelte-wttl3c{caret-color:orange;padding:5px 15px;width:60%;max-width:250px;height:30px;margin:10px 0;background-color:transparent;border:1px solid var antiquewhite;font-size:1em;color:gray;font-family:"Fira Code", sans-serif;border-radius:5px;outline:none}#light.svelte-wttl3c input.svelte-wttl3c{caret-color:#333;color:black;border:2px solid black}input.svelte-wttl3c.svelte-wttl3c:focus{outline:none}input.svelte-wttl3c.svelte-wttl3c::placeholder{color:antiquewhite;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;opacity:80%}#light.svelte-wttl3c input.svelte-wttl3c::placeholder{color:black;opacity:80%}button.svelte-wttl3c.svelte-wttl3c{width:60px;margin:10px 0;padding:7px;background-color:antiquewhite;font-size:1.1 em;border-radius:10px;border:none;font-weight:bolder;transition:all .5s linear}#light.svelte-wttl3c button.svelte-wttl3c:hover,button.svelte-wttl3c.svelte-wttl3c:hover{background-color:orange}#light.svelte-wttl3c button.svelte-wttl3c{background-color:black;color:#fff}`,
       map: null
     };
     Form = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1231,23 +1231,23 @@ var init_page_svelte2 = __esm({
       if ($$props.themeColor === void 0 && $$bindings.themeColor && themeColor !== void 0)
         $$bindings.themeColor(themeColor);
       $$result.css.add(css$12);
-      return `<div class="form-container svelte-nimysd"${add_attribute("id", themeColor == "light" && "light", 0)}><input type="text" placeholder="Full Name" class="svelte-nimysd"${add_attribute("this", inputRef, 0)}>
-        <input type="text" placeholder="Email" class="svelte-nimysd">
-        <input type="text" placeholder="Message" class="svelte-nimysd">
-        <button class="svelte-nimysd">send</button>
+      return `<div class="form-container svelte-wttl3c"${add_attribute("id", themeColor == "light" && "light", 0)}><input type="text" placeholder="Full Name" class="svelte-wttl3c"${add_attribute("this", inputRef, 0)}>
+        <input type="text" placeholder="Email" class="svelte-wttl3c">
+        <input type="text" placeholder="Message" class="svelte-wttl3c">
+        <button class="svelte-wttl3c">send</button>
 </div>`;
     });
     css3 = {
-      code: ".nav-icon.svelte-7adzqk.svelte-7adzqk{position:absolute;top:1em;left:1em}.theme-icon.svelte-7adzqk.svelte-7adzqk{position:absolute;top:1em;right:1em}.page-container.svelte-7adzqk.svelte-7adzqk{margin:0;padding:0;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.page-container.svelte-7adzqk div header.svelte-7adzqk{cursor:pointer}.page-container.svelte-7adzqk div header h1.svelte-7adzqk{font-weight:900;text-align:center;font-family:'Allura', cursive;font-size:2.5em;line-height:0.9em;color:antiquewhite}main div.svelte-7adzqk header h1.svelte-7adzqk:hover{opacity:80%}#yoo-light.svelte-7adzqk.svelte-7adzqk{color:black}",
+      code: ".nav-icon.svelte-6i04k0.svelte-6i04k0{position:absolute;top:1em;left:1em}.theme-icon.svelte-6i04k0.svelte-6i04k0{position:absolute;top:1em;right:1em}.page-container.svelte-6i04k0.svelte-6i04k0{margin:0;padding:0;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.page-container.svelte-6i04k0 div header.svelte-6i04k0{cursor:pointer}.page-container.svelte-6i04k0 div header h1.svelte-6i04k0{font-weight:900;text-align:center;font-family:'Allura', cursive;font-size:2.5em;line-height:0.9em;background:linear-gradient(antiquewhite, orange);-webkit-background-clip:text;background-clip:text;color:transparent}main div.svelte-6i04k0 header h1.svelte-6i04k0:hover{opacity:80%}#yoo-light.svelte-6i04k0.svelte-6i04k0{background:linear-gradient(black, orange);-webkit-background-clip:text;background-clip:text;color:transparent}",
       map: null
     };
     Page2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let themeColor;
       $$result.css.add(css3);
-      return `<div class="page-container svelte-7adzqk"><div class="nav-icon svelte-7adzqk">${validate_component(Icon, "Icon").$$render($$result, { data: navicon, scale: "1.2" }, {}, {})}</div>
+      return `<div class="page-container svelte-6i04k0"><div class="nav-icon svelte-6i04k0">${validate_component(Icon, "Icon").$$render($$result, { data: navicon, scale: "1.2" }, {}, {})}</div>
     
-    <div class="theme-icon svelte-7adzqk">${validate_component(Icon, "Icon").$$render($$result, { data: moonO, scale: "1.5" }, {}, {})}</div>
-         <div class="pageName svelte-7adzqk"><header class="svelte-7adzqk"><h1${add_attribute("id", "yoo", 0)} class="svelte-7adzqk"><a href="/" data-sveltekit-preload-data="tap">Yoo<br>Gallery</a></h1></header></div>
+    <div class="theme-icon svelte-6i04k0">${validate_component(Icon, "Icon").$$render($$result, { data: moonO, scale: "1.5" }, {}, {})}</div>
+         <div class="pageName svelte-6i04k0"><header class="svelte-6i04k0"><h1${add_attribute("id", "yoo", 0)} class="svelte-6i04k0"><a href="/" data-sveltekit-preload-data="tap">Yoo<br>Gallery</a></h1></header></div>
     ${validate_component(Form, "Form").$$render($$result, { themeColor }, {}, {})}
      ${validate_component(ContactIcon, "ContactIcon").$$render($$result, {}, {}, {})}
 </div>`;
@@ -1269,8 +1269,8 @@ var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
-    imports4 = ["_app/immutable/nodes/3.fb2cb939.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/index.b1fb2681.js"];
-    stylesheets4 = ["_app/immutable/assets/3.ff28e404.css", "_app/immutable/assets/index.cb0c4400.css"];
+    imports4 = ["_app/immutable/nodes/3.604b04a1.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/index.b1fb2681.js"];
+    stylesheets4 = ["_app/immutable/assets/3.c0244179.css", "_app/immutable/assets/index.cb0c4400.css"];
     fonts4 = [];
   }
 });
@@ -1441,7 +1441,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "q9xtbk"
+  version_hash: "19ubqur"
 };
 function get_hooks() {
   return {};
@@ -4744,7 +4744,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["camera.jpg", "favicon.png", "painting.jpg", "tie-dye.jpg"]),
   mimeTypes: { ".jpg": "image/jpeg", ".png": "image/png" },
   _: {
-    client: { "start": "_app/immutable/entry/start.6cd5791f.js", "app": "_app/immutable/entry/app.ce05ed88.js", "imports": ["_app/immutable/entry/start.6cd5791f.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.0090cae2.js", "_app/immutable/entry/app.ce05ed88.js", "_app/immutable/chunks/index.f9b9fb40.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.b7ab41c5.js", "app": "_app/immutable/entry/app.e350d5a2.js", "imports": ["_app/immutable/entry/start.b7ab41c5.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.14b756d3.js", "_app/immutable/entry/app.e350d5a2.js", "_app/immutable/chunks/index.f9b9fb40.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

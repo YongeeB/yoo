@@ -43,6 +43,7 @@
         color: gray;
         font-family: "Fira Code", sans-serif;
         border-radius: 5px;
+        outline: none;
     }
 
      #light input {

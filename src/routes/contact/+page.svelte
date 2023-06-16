@@ -68,7 +68,10 @@ function handleClick(theme){
         font-family: 'Allura', cursive;
         font-size: 2.5em;
         line-height: 0.9em;
-        color: antiquewhite;
+        background: linear-gradient(antiquewhite, orange);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 
     main div header h1:hover {
@@ -76,7 +79,10 @@ function handleClick(theme){
     }
 
     #yoo-light{
-        color: black;
+        background: linear-gradient(black, orange);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 
 
