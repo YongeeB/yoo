@@ -703,7 +703,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.aed884e9.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.a79147ee.js"];
+    imports2 = ["_app/immutable/nodes/1.b8b35f92.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.0090cae2.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -754,7 +754,7 @@ function normaliseData(data) {
   }
   return iconData;
 }
-var Raw, css, Svg, Object_1, outerScale, Icon, twitter, facebook, instagram, moonO, whatsapp;
+var Raw, css, Svg, Object_1, outerScale, Icon, twitter, facebook, navicon, instagram, moonO, whatsapp;
 var init_index2 = __esm({
   ".svelte-kit/output/server/chunks/index2.js"() {
     init_chunks();
@@ -980,6 +980,7 @@ var init_index2 = __esm({
     });
     twitter = { "twitter": { "width": 1664, "height": 1792, "paths": [{ "d": "M1620 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" }] } };
     facebook = { "facebook": { "width": 1024, "height": 1792, "paths": [{ "d": "M959 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" }] } };
+    navicon = { "navicon": { "width": 1536, "height": 1792, "paths": [{ "d": "M1536 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zM1536 832v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zM1536 320v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z" }] } };
     instagram = { "instagram": { "width": 1536, "height": 1792, "paths": [{ "d": "M1024 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zM1162 896q0 164-115 279t-279 115-279-115-115-279 115-279 279-115 279 115 115 279zM1270 486q0 38-27 65t-65 27-65-27-27-65 27-65 65-27 65 27 27 65zM768 266q-7 0-76.5-0.5t-105.5 0-96.5 3-103 10-71.5 18.5q-50 20-88 58t-58 88q-11 29-18.5 71.5t-10 103-3 96.5 0 105.5 0.5 76.5-0.5 76.5 0 105.5 3 96.5 10 103 18.5 71.5q20 50 58 88t88 58q29 11 71.5 18.5t103 10 96.5 3 105.5 0 76.5-0.5 76.5 0.5 105.5 0 96.5-3 103-10 71.5-18.5q50-20 88-58t58-88q11-29 18.5-71.5t10-103 3-96.5 0-105.5-0.5-76.5 0.5-76.5 0-105.5-3-96.5-10-103-18.5-71.5q-20-50-58-88t-88-58q-29-11-71.5-18.5t-103-10-96.5-3-105.5 0-76.5 0.5zM1536 896q0 229-5 317-10 208-124 322t-322 124q-88 5-317 5t-317-5q-208-10-322-124t-124-322q-5-88-5-317t5-317q10-208 124-322t322-124q88-5 317-5t317 5q208 10 322 124t124 322q5 88 5 317z" }] } };
     moonO = { "moon-o": { "width": 1536, "height": 1792, "paths": [{ "d": "M1262 1303q-54 9-110 9-182 0-337-90t-245-245-90-337q0-192 104-357-201 60-328.5 229t-127.5 384q0 130 51 248.5t136.5 204 204 136.5 248.5 51q144 0 273.5-61.5t220.5-171.5zM1465 1218q-94 203-283.5 324.5t-413.5 121.5q-156 0-298-61t-245-164-164-245-61-298q0-153 57.5-292.5t156-241.5 235.5-164.5 290-68.5q44-2 61 39 18 41-15 72-86 78-131.5 181.5t-45.5 218.5q0 148 73 273t198 198 273 73q118 0 228-51 41-18 72 13 14 14 17.5 34t-4.5 38z" }] } };
     whatsapp = { "whatsapp": { "width": 1536, "height": 1792, "paths": [{ "d": "M985 974q13 0 97.5 44t89.5 53q2 5 2 15 0 33-17 76-16 39-71 65.5t-102 26.5q-57 0-190-62-98-45-170-118t-148-185q-72-107-71-194v-8q3-91 74-158 24-22 52-22 6 0 18 1.5t19 1.5q19 0 26.5 6.5t15.5 27.5q8 20 33 88t25 75q0 21-34.5 57.5t-34.5 46.5q0 7 5 15 34 73 102 137 56 53 151 101 12 7 22 7 15 0 54-48.5t52-48.5zM782 1504q127 0 243.5-50t200.5-134 134-200.5 50-243.5-50-243.5-134-200.5-200.5-134-243.5-50-243.5 50-200.5 134-134 200.5-50 243.5q0 203 120 368l-79 233 242-77q158 104 345 104zM782 122q153 0 292.5 60t240.5 161 161 240.5 60 292.5-60 292.5-161 240.5-240.5 161-292.5 60q-195 0-365-94l-417 134 136-405q-108-178-108-389 0-153 60-292.5t161-240.5 240.5-161 292.5-60z" }] } };
@@ -1154,7 +1155,7 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.js";
-    imports3 = ["_app/immutable/nodes/2.d2b048f3.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/index.25f4ac03.js"];
+    imports3 = ["_app/immutable/nodes/2.e28f17cc.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/index.b1fb2681.js"];
     stylesheets3 = ["_app/immutable/assets/2.a12a83df.css", "_app/immutable/assets/index.cb0c4400.css"];
     fonts3 = [];
   }
@@ -1171,18 +1172,18 @@ var init_page_svelte2 = __esm({
     init_chunks();
     init_index2();
     css$22 = {
-      code: "h4.svelte-16cxgm1{text-align:center;margin-bottom:5px}.visit-container.svelte-16cxgm1{margin:1.2em 0}",
+      code: "h4.svelte-szv1t9{text-align:center;margin-bottom:5px}.visit-container.svelte-szv1t9{margin:10px 0}",
       map: null
     };
     ContactIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$22);
-      return `<div class="visit-container svelte-16cxgm1"><h4 class="svelte-16cxgm1">visit us on</h4>
+      return `<div class="visit-container svelte-szv1t9"><h4 class="svelte-szv1t9">visit us on</h4>
     <div class="icon-container">${validate_component(Icon, "Icon").$$render(
         $$result,
         {
           data: facebook,
           scale: "1.5",
-          style: "margin-right: 10px; color: blue;"
+          style: "margin-right: 12px; color: blue;"
         },
         {},
         {}
@@ -1192,7 +1193,7 @@ var init_page_svelte2 = __esm({
         {
           data: instagram,
           scale: "1.5",
-          style: "margin-right: 10px; color: orange;"
+          style: "margin-right: 12px; color: orange;"
         },
         {},
         {}
@@ -1202,7 +1203,7 @@ var init_page_svelte2 = __esm({
         {
           data: twitter,
           scale: "1.5",
-          style: "margin-right: 10px; color: lightblue"
+          style: "margin-right: 12px; color: lightblue"
         },
         {},
         {}
@@ -1221,25 +1222,33 @@ var init_page_svelte2 = __esm({
 </div>`;
     });
     css$12 = {
-      code: '.form-container.svelte-19la254{width:100%;margin:20px 0;margin-bottom:0px;display:flex;flex-direction:column;align-items:center}input.svelte-19la254{caret-color:orange;padding:5px 15px;width:60%;max-width:250px;height:30px;margin:10px 0;background-color:transparent;border:1px solid var(--primary-color);font-size:1em;color:orange;font-family:"Fira Code", sans-serif;font-weight:bold;border-radius:10px}input.svelte-19la254:focus{outline:none}input.svelte-19la254::placeholder{color:orange;opacity:80%}button.svelte-19la254{margin:10px 0;padding:7px;background-color:var(--primary-color);font-size:1.1em;border-radius:10px;border:none;font-weight:bolder}',
+      code: `.form-container.svelte-nimysd.svelte-nimysd{width:100%;margin:20px 0;margin-bottom:0px;display:flex;flex-direction:column;align-items:center}input.svelte-nimysd.svelte-nimysd{caret-color:orange;padding:5px 15px;width:60%;max-width:250px;height:30px;margin:10px 0;background-color:transparent;border:1px solid var antiquewhite;font-size:1em;color:gray;font-family:"Fira Code", sans-serif;border-radius:5px}#light.svelte-nimysd input.svelte-nimysd{caret-color:#333;color:black;border:2px solid black}input.svelte-nimysd.svelte-nimysd:focus{outline:none}input.svelte-nimysd.svelte-nimysd::placeholder{color:antiquewhite;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;opacity:80%}#light.svelte-nimysd input.svelte-nimysd::placeholder{color:black;opacity:80%}button.svelte-nimysd.svelte-nimysd{width:60px;margin:10px 0;padding:7px;background-color:antiquewhite;font-size:1.1 em;border-radius:10px;border:none;font-weight:bolder;transition:all .5s linear}#light.svelte-nimysd button.svelte-nimysd:hover,button.svelte-nimysd.svelte-nimysd:hover{background-color:orange}#light.svelte-nimysd button.svelte-nimysd{background-color:black;color:#fff}`,
       map: null
     };
     Form = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let inputRef;
+      let { themeColor } = $$props;
+      if ($$props.themeColor === void 0 && $$bindings.themeColor && themeColor !== void 0)
+        $$bindings.themeColor(themeColor);
       $$result.css.add(css$12);
-      return `<div class="form-container svelte-19la254"><input type="text" placeholder="Full Name" class="svelte-19la254">
-        <input type="text" placeholder="Email" class="svelte-19la254">
-        <input type="text" placeholder="Message" class="svelte-19la254">
-        <button class="svelte-19la254">send</button>
+      return `<div class="form-container svelte-nimysd"${add_attribute("id", themeColor == "light" && "light", 0)}><input type="text" placeholder="Full Name" class="svelte-nimysd"${add_attribute("this", inputRef, 0)}>
+        <input type="text" placeholder="Email" class="svelte-nimysd">
+        <input type="text" placeholder="Message" class="svelte-nimysd">
+        <button class="svelte-nimysd">send</button>
 </div>`;
     });
     css3 = {
-      code: ".page-container.svelte-1i9kcdi.svelte-1i9kcdi{margin:0;padding:0;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.page-container.svelte-1i9kcdi div header.svelte-1i9kcdi{cursor:pointer}.page-container.svelte-1i9kcdi div header h1.svelte-1i9kcdi{text-align:center;font-family:'Allura', cursive;letter-spacing:0.2em;font-size:2.5em;line-height:0.9em;color:orange}main div.svelte-1i9kcdi header h1.svelte-1i9kcdi:hover{opacity:80%}",
+      code: ".nav-icon.svelte-7adzqk.svelte-7adzqk{position:absolute;top:1em;left:1em}.theme-icon.svelte-7adzqk.svelte-7adzqk{position:absolute;top:1em;right:1em}.page-container.svelte-7adzqk.svelte-7adzqk{margin:0;padding:0;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.page-container.svelte-7adzqk div header.svelte-7adzqk{cursor:pointer}.page-container.svelte-7adzqk div header h1.svelte-7adzqk{font-weight:900;text-align:center;font-family:'Allura', cursive;font-size:2.5em;line-height:0.9em;color:antiquewhite}main div.svelte-7adzqk header h1.svelte-7adzqk:hover{opacity:80%}#yoo-light.svelte-7adzqk.svelte-7adzqk{color:black}",
       map: null
     };
     Page2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let themeColor;
       $$result.css.add(css3);
-      return `<div class="page-container svelte-1i9kcdi"><div class="pageName svelte-1i9kcdi"><header class="svelte-1i9kcdi"><h1 id="yoo" class="svelte-1i9kcdi"><a href="/" data-sveltekit-preload-data="tap">Yoo<br>Gallery</a></h1></header></div>
-    ${validate_component(Form, "Form").$$render($$result, {}, {}, {})}
+      return `<div class="page-container svelte-7adzqk"><div class="nav-icon svelte-7adzqk">${validate_component(Icon, "Icon").$$render($$result, { data: navicon, scale: "1.2" }, {}, {})}</div>
+    
+    <div class="theme-icon svelte-7adzqk">${validate_component(Icon, "Icon").$$render($$result, { data: moonO, scale: "1.5" }, {}, {})}</div>
+         <div class="pageName svelte-7adzqk"><header class="svelte-7adzqk"><h1${add_attribute("id", "yoo", 0)} class="svelte-7adzqk"><a href="/" data-sveltekit-preload-data="tap">Yoo<br>Gallery</a></h1></header></div>
+    ${validate_component(Form, "Form").$$render($$result, { themeColor }, {}, {})}
      ${validate_component(ContactIcon, "ContactIcon").$$render($$result, {}, {}, {})}
 </div>`;
     });
@@ -1260,8 +1269,8 @@ var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
-    imports4 = ["_app/immutable/nodes/3.a97acfd1.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/index.25f4ac03.js"];
-    stylesheets4 = ["_app/immutable/assets/3.811313f6.css", "_app/immutable/assets/index.cb0c4400.css"];
+    imports4 = ["_app/immutable/nodes/3.fb2cb939.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/index.b1fb2681.js"];
+    stylesheets4 = ["_app/immutable/assets/3.ff28e404.css", "_app/immutable/assets/index.cb0c4400.css"];
     fonts4 = [];
   }
 });
@@ -1432,7 +1441,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1npcg7v"
+  version_hash: "q9xtbk"
 };
 function get_hooks() {
   return {};
@@ -4735,7 +4744,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["camera.jpg", "favicon.png", "painting.jpg", "tie-dye.jpg"]),
   mimeTypes: { ".jpg": "image/jpeg", ".png": "image/png" },
   _: {
-    client: { "start": "_app/immutable/entry/start.988e5f64.js", "app": "_app/immutable/entry/app.e3b3abd1.js", "imports": ["_app/immutable/entry/start.988e5f64.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.a79147ee.js", "_app/immutable/entry/app.e3b3abd1.js", "_app/immutable/chunks/index.f9b9fb40.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.6cd5791f.js", "app": "_app/immutable/entry/app.ce05ed88.js", "imports": ["_app/immutable/entry/start.6cd5791f.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.0090cae2.js", "_app/immutable/entry/app.ce05ed88.js", "_app/immutable/chunks/index.f9b9fb40.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

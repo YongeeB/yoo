@@ -1,14 +1,24 @@
 <script>
+// @ts-nocheck
 
+    import {onMount} from "svelte";
+
+    let inputRef;
+
+    onMount(()=> {
+        inputRef.focus();
+    })
+
+    export let themeColor;
 </script>
-<div class="form-container">
-        <input type="text" placeholder="Full Name" />
+<div class="form-container" id={themeColor == "light" && "light"}>
+        <input type="text" placeholder="Full Name" bind:this={inputRef}/>
         <input type="text" placeholder="Email">
         <input type="text" placeholder="Message">
         <button>send</button>
 </div>
 
-<style>
+<style> 
     .form-container {
         width: 100%;
         margin: 20px 0;
@@ -18,6 +28,8 @@
         align-items: center;
     }
 
+   
+
     input {
         caret-color: orange;
         padding: 5px 15px;
@@ -26,31 +38,54 @@
         height: 30px;
         margin: 10px 0;
         background-color: transparent;
-        border: 1px solid var(--primary-color);
+        border: 1px solid var antiquewhite;
         font-size: 1em;
-        color: orange;
+        color: gray;
         font-family: "Fira Code", sans-serif;
-        font-weight: bold;
-        border-radius: 10px;
+        border-radius: 5px;
+    }
+
+     #light input {
+        caret-color: #333;
+        color: black;
+        border: 2px solid black;
+        
     }
 
     input:focus {
         outline: none;
-    }
+    } 
 
 
     input::placeholder {
-        color: orange;
+        color: antiquewhite;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        opacity: 80%;
+    }
+
+    #light input::placeholder {
+        color: black;
         opacity: 80%;
     }
 
     button {
+        width: 60px;
         margin: 10px 0;
         padding: 7px;
-        background-color: var(--primary-color);
-        font-size: 1.1em;
+        background-color: antiquewhite;
+        font-size: 1.1 em;
         border-radius: 10px;
         border: none;
         font-weight: bolder;
+        transition: all .5s linear;
+    }
+
+    #light button:hover, button:hover{
+        background-color: orange;
+    }
+
+    #light button {
+        background-color: black;
+        color: #fff;
     }
 </style>
