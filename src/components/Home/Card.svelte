@@ -1,5 +1,12 @@
-<script lang="ts">
+<script>
+  import { onMount } from "svelte";
     import Lazy from "svelte-lazy"
+    // @ts-ignore
+    let theme;
+
+    onMount(()=> {
+        theme = localStorage.getItem("theme");
+    })
 
 
     let images = [
@@ -17,51 +24,47 @@
         },
         {
             name: "Yoo Aesthetics",
-            src:  "/camera.jpg",
+            src:  "/Aesthetics.jpg",
         },
         {
             name: "Yoo Stitches",
-            src:  "/camera.jpg",
+            src:  "/stitches.jpg",
         },
         {
             name: "Yoo Resin",
-            src:  "/camera.jpg",
-        },
-        {
-            name: "Yoo Brand",
-            src:  "/camera.jpg",
+            src:  "/resin.jpg",
         },
         {
             name: "Yoo Sculptures",
-            src:  "/camera.jpg",
+            src:  "/sculpture.jpg",
         },
         {
             name: "Yoo Graphic design",
-            src:  "/camera.jpg",
+            src:  "/graphic.jpg",
         },
         {
             name: "Yoo Seed And Grains",
-            src:  "/camera.jpg",
+            src:  "/grains.jpg",
         },
         {
             name: "Yoo Paws",
-            src:  "/camera.jpg",
+            src:  "/paws.png",
         },
          {
             name: "Yoo Scribblings",
-            src:  "/camera.jpg",
+            src:  "/scribblings.png",
         },
          {
             name: "Yoo Embroidery",
-            src:  "/camera.jpg",
+            src:  "/embroidery.jpg",
         },
          {
             name: "Yoo Pottery",
-            src:  "/camera.jpg",
+            src:  "/pottery.png",
         },
          {
             name: "Yoo Batiks",
-            src:  "/camera.jpg",
+            src:  "/batiks.jpg",
         },
     ]
 
@@ -75,8 +78,8 @@
 <!-- svelte-ignore a11y-img-redundant-alt -->
 <div class="image-container">
 <!-- <img  class="lazy-image" data-src={image.src} alt={image.name} /> -->
-<Lazy height="300px">
-    <img src={image.src} alt={image.name} />
+<Lazy>
+    <img src={image.src} alt={image.name} id={theme=="dark" ? "dark" : ""} />
 </Lazy>
 </div>
 <h3 id="title">{image.name}</h3>
@@ -94,6 +97,7 @@
     img {
         width: 90%;
         max-width: 400px;
+        height: 250px;
         margin-bottom: 1em;
         border-radius: 20px;
     }
@@ -124,6 +128,10 @@
         font-family: 'Fira Code', monospace;
         padding: 20px;
         line-height: 1.5em;
+    }
+
+    #dark {
+        background-color: white;
     }
 
     @media(min-width: 800px){

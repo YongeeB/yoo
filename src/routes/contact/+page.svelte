@@ -1,12 +1,10 @@
 <script>
 // @ts-nocheck
-   import  Icon from "svelte-awesome/components/Icon.svelte"
-
+    import  Icon from "svelte-awesome/components/Icon.svelte"
     import {moonO, navicon} from "svelte-awesome/icons";
-
-  import ContactIcon from "../../components/Contact/ContactIcon.svelte";
-import Form from "../../components/Contact/Form.svelte";
-  import { onMount } from "svelte";
+    import ContactIcon from "../../components/Contact/ContactIcon.svelte";
+    import Form from "../../components/Contact/Form.svelte";
+    import { onMount } from "svelte";
 
 let themeColor;
         onMount(() => {
@@ -31,7 +29,7 @@ function handleClick(theme){
     </div>
          <div class="pageName">
         <header>
-            <h1 id={themeColor == "light" ? "yoo-light" : "yoo"}><a href="/" data-sveltekit-preload-data="tap">Yoo<br />Gallery</a></h1>
+            <h1 id={themeColor == "light" ? "yoo-light" : "yoo"}><a href="/" data-sveltekit-preload-data="tap">Yoo<br />Brands</a></h1>
         </header>
     </div>
     <Form {themeColor}/>

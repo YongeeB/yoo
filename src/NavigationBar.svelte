@@ -27,7 +27,7 @@
 <div class="nav-container">
     <div class="header">
         <header>
-            <h1>Yoo<br />Gallery</h1>
+            <h1>Yoo<br />Brands</h1>
         </header>
     </div>
     <div class="nav-links">

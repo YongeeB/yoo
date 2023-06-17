@@ -83,6 +83,7 @@
 
     #light button:hover, button:hover{
         background-color: orange;
+        color: black;
     }
 
     #light button {

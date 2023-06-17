@@ -1,7 +1,7 @@
 <script>
 // @ts-nocheck
 
-    import  Icon from "svelte-awesome/components/Icon.svelte"
+   import  Icon from "svelte-awesome/components/Icon.svelte"
     import {facebook, instagram, twitter, whatsapp} from "svelte-awesome/icons";
 </script>
 <div class="visit-container">
