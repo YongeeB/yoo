@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
   import { onMount } from "svelte";
     import Lazy from "svelte-lazy"
     // @ts-ignore
@@ -44,7 +46,7 @@
         },
         {
             name: "Yoo Seed And Grains",
-            src:  "/grains.jpg",
+            src:  "/beads.jpg",
         },
         {
             name: "Yoo Paws",
@@ -95,11 +97,12 @@
         flex-direction: column;
     }
     img {
-        width: 90%;
-        max-width: 400px;
+        width: 100%;
+        max-width: 350px;
         height: 250px;
         margin-bottom: 1em;
         border-radius: 20px;
+        margin: 0 auto;
     }
 
     .card-container {
@@ -115,9 +118,10 @@
     #title {
         cursor: pointer;
         color: orange;
-        font-size: 1.5em;
+        font-size: 1.7em;
+        font-family: "Fira Code";
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 5px 0;
     }
 
     #title:hover {

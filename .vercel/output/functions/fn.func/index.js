@@ -703,7 +703,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.816a5b9d.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.2ff7e85c.js"];
+    imports2 = ["_app/immutable/nodes/1.98019a94.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.470f255c.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1041,7 +1041,7 @@ var init_page_svelte = __esm({
 </div>`;
     });
     css$2 = {
-      code: ".cards-container.svelte-1ytzlt5.svelte-1ytzlt5{display:flex;flex-direction:column}img.svelte-1ytzlt5.svelte-1ytzlt5{width:90%;max-width:400px;height:250px;margin-bottom:1em;border-radius:20px}.card-container.svelte-1ytzlt5.svelte-1ytzlt5{margin-bottom:1em}.cards-container.svelte-1ytzlt5 .image-container.svelte-1ytzlt5{padding-top:10px;display:flex;justify-content:center}#title.svelte-1ytzlt5.svelte-1ytzlt5{cursor:pointer;color:orange;font-size:1.5em;text-align:center;margin-bottom:10px}#title.svelte-1ytzlt5.svelte-1ytzlt5:hover{text-decoration:underline}#contents.svelte-1ytzlt5.svelte-1ytzlt5{font-family:'Fira Code', monospace;padding:20px;line-height:1.5em}#dark.svelte-1ytzlt5.svelte-1ytzlt5{background-color:white}@media(min-width: 800px){.cards-container.svelte-1ytzlt5.svelte-1ytzlt5{display:flex;justify-content:center}.grid.svelte-1ytzlt5.svelte-1ytzlt5{display:grid;grid-template-columns:1fr 1fr}.image-container.svelte-1ytzlt5.svelte-1ytzlt5{align-self:center}}@media(min-width: 1150px){.grid.svelte-1ytzlt5.svelte-1ytzlt5{grid-template-columns:1fr 1fr 1fr}}",
+      code: `.cards-container.svelte-8fyv3z.svelte-8fyv3z{display:flex;flex-direction:column}img.svelte-8fyv3z.svelte-8fyv3z{width:100%;max-width:350px;height:250px;margin-bottom:1em;border-radius:20px;margin:0 auto}.card-container.svelte-8fyv3z.svelte-8fyv3z{margin-bottom:1em}.cards-container.svelte-8fyv3z .image-container.svelte-8fyv3z{padding-top:10px;display:flex;justify-content:center}#title.svelte-8fyv3z.svelte-8fyv3z{cursor:pointer;color:orange;font-size:1.7em;font-family:"Fira Code";text-align:center;margin-bottom:5px 0}#title.svelte-8fyv3z.svelte-8fyv3z:hover{text-decoration:underline}#contents.svelte-8fyv3z.svelte-8fyv3z{font-family:'Fira Code', monospace;padding:20px;line-height:1.5em}#dark.svelte-8fyv3z.svelte-8fyv3z{background-color:white}@media(min-width: 800px){.cards-container.svelte-8fyv3z.svelte-8fyv3z{display:flex;justify-content:center}.grid.svelte-8fyv3z.svelte-8fyv3z{display:grid;grid-template-columns:1fr 1fr}.image-container.svelte-8fyv3z.svelte-8fyv3z{align-self:center}}@media(min-width: 1150px){.grid.svelte-8fyv3z.svelte-8fyv3z{grid-template-columns:1fr 1fr 1fr}}`,
       map: null
     };
     Card = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1077,7 +1077,7 @@ var init_page_svelte = __esm({
         },
         {
           name: "Yoo Seed And Grains",
-          src: "/grains.jpg"
+          src: "/beads.jpg"
         },
         { name: "Yoo Paws", src: "/paws.png" },
         {
@@ -1092,17 +1092,17 @@ var init_page_svelte = __esm({
         { name: "Yoo Batiks", src: "/batiks.jpg" }
       ];
       $$result.css.add(css$2);
-      return `<div class="cards-container svelte-1ytzlt5"><div class="grid svelte-1ytzlt5">${each(images, (image) => {
-        return `<div class="card-container svelte-1ytzlt5">
-<div class="image-container svelte-1ytzlt5">
+      return `<div class="cards-container svelte-8fyv3z"><div class="grid svelte-8fyv3z">${each(images, (image) => {
+        return `<div class="card-container svelte-8fyv3z">
+<div class="image-container svelte-8fyv3z">
 ${validate_component(Src, "Lazy").$$render($$result, {}, {}, {
           default: () => {
-            return `<img${add_attribute("src", image.src, 0)}${add_attribute("alt", image.name, 0)}${add_attribute("id", "", 0)} class="svelte-1ytzlt5">
+            return `<img${add_attribute("src", image.src, 0)}${add_attribute("alt", image.name, 0)}${add_attribute("id", "", 0)} class="svelte-8fyv3z">
 `;
           }
         })}</div>
-<h3 id="title" class="svelte-1ytzlt5">${escape(image.name)}</h3>
-<p id="contents" class="svelte-1ytzlt5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque magnam maxime optio tempore, quia, nisi deleniti soluta enim fugiat molestiae possimus natus fugit itaque quam architecto adipisci voluptatum a! Porro deserunt alias repellat eum quibusdam eius officia dolorum id ipsa.</p>
+<h3 id="title" class="svelte-8fyv3z">${escape(image.name)}</h3>
+<p id="contents" class="svelte-8fyv3z">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque magnam maxime optio tempore, quia, nisi deleniti soluta enim fugiat molestiae possimus natus fugit itaque quam architecto adipisci voluptatum a! Porro deserunt alias repellat eum quibusdam eius officia dolorum id ipsa.</p>
 </div>`;
       })}</div>
 </div>`;
@@ -1157,8 +1157,8 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.js";
-    imports3 = ["_app/immutable/nodes/2.2a688c25.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/index.b1fb2681.js"];
-    stylesheets3 = ["_app/immutable/assets/2.0a5dd13b.css", "_app/immutable/assets/index.cb0c4400.css"];
+    imports3 = ["_app/immutable/nodes/2.0963d235.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/index.b1fb2681.js"];
+    stylesheets3 = ["_app/immutable/assets/2.e2f29b35.css", "_app/immutable/assets/index.cb0c4400.css"];
     fonts3 = [];
   }
 });
@@ -1443,7 +1443,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "v09bw5"
+  version_hash: "1bc4xi6"
 };
 function get_hooks() {
   return {};
@@ -4743,10 +4743,10 @@ _manifest = new WeakMap();
 var manifest = {
   appDir: "_app",
   appPath: "_app",
-  assets: /* @__PURE__ */ new Set(["Aesthetics.jpg", "batiks.jpg", "camera.jpg", "embroidery.jpg", "favicon.png", "grains.jpg", "graphic.jpg", "painting.jpg", "paws.png", "pottery.png", "resin.jpg", "scribblings.png", "sculpture.jpg", "stitches.jpg", "tie-dye.jpg"]),
+  assets: /* @__PURE__ */ new Set(["Aesthetics.jpg", "batiks.jpg", "beads.jpg", "camera.jpg", "embroidery.jpg", "favicon.png", "grains.jpg", "graphic.jpg", "painting.jpg", "paws.png", "pottery.png", "resin.jpg", "scribblings.png", "sculpture.jpg", "stitches.jpg", "tie-dye.jpg"]),
   mimeTypes: { ".jpg": "image/jpeg", ".png": "image/png" },
   _: {
-    client: { "start": "_app/immutable/entry/start.530dd1a4.js", "app": "_app/immutable/entry/app.1c94fa9e.js", "imports": ["_app/immutable/entry/start.530dd1a4.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.2ff7e85c.js", "_app/immutable/entry/app.1c94fa9e.js", "_app/immutable/chunks/index.f9b9fb40.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.ab90d445.js", "app": "_app/immutable/entry/app.7b6f0e48.js", "imports": ["_app/immutable/entry/start.ab90d445.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.470f255c.js", "_app/immutable/entry/app.7b6f0e48.js", "_app/immutable/chunks/index.f9b9fb40.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
