@@ -98,11 +98,11 @@
     }
     img {
         width: 100%;
-        max-width: 350px;
+        max-width: 300px;
         height: 250px;
         margin-bottom: 1em;
         border-radius: 20px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 
     .card-container {

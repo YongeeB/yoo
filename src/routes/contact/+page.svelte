@@ -6,6 +6,8 @@
     import Form from "../../components/Contact/Form.svelte";
     import { onMount } from "svelte";
 
+let name;
+
 let themeColor;
         onMount(() => {
             themeColor = localStorage.getItem("theme");
@@ -17,6 +19,7 @@ function handleClick(theme){
     themeColor = theme;
     localStorage.setItem("theme", theme);
 }
+
 
 </script>
 <div class="page-container">
@@ -43,10 +46,18 @@ function handleClick(theme){
         left: 1em;
     }
 
+   
+
+
+    a {
+        text-decoration: none;
+    }
+
     .theme-icon {
         position: absolute;
         top: 1em;
         right: 1em;
+        z-index: 2;
     }
     .page-container {
         margin: 0;

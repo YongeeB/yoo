@@ -703,7 +703,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.98019a94.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.470f255c.js"];
+    imports2 = ["_app/immutable/nodes/1.c2c4f5cf.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.e9341ba0.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -754,7 +754,7 @@ function normaliseData(data) {
   }
   return iconData;
 }
-var Raw, css, Svg, Object_1, outerScale, Icon, twitter, facebook, navicon, instagram, moonO, whatsapp;
+var Raw, css, Svg, Object_1, outerScale, Icon, phone, navicon, moonO;
 var init_index2 = __esm({
   ".svelte-kit/output/server/chunks/index2.js"() {
     init_chunks();
@@ -978,12 +978,9 @@ var init_index2 = __esm({
       } while (!$$settled);
       return $$rendered;
     });
-    twitter = { "twitter": { "width": 1664, "height": 1792, "paths": [{ "d": "M1620 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" }] } };
-    facebook = { "facebook": { "width": 1024, "height": 1792, "paths": [{ "d": "M959 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" }] } };
+    phone = { "phone": { "width": 1408, "height": 1792, "paths": [{ "d": "M1408 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-53-3.5t-57.5-12.5-47-14.5-55.5-20.5-49-18q-98-35-175-83-127-79-264-216t-216-264q-48-77-83-175-3-9-18-49t-20.5-55.5-14.5-47-12.5-57.5-3.5-53q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z" }] } };
     navicon = { "navicon": { "width": 1536, "height": 1792, "paths": [{ "d": "M1536 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zM1536 832v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zM1536 320v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z" }] } };
-    instagram = { "instagram": { "width": 1536, "height": 1792, "paths": [{ "d": "M1024 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zM1162 896q0 164-115 279t-279 115-279-115-115-279 115-279 279-115 279 115 115 279zM1270 486q0 38-27 65t-65 27-65-27-27-65 27-65 65-27 65 27 27 65zM768 266q-7 0-76.5-0.5t-105.5 0-96.5 3-103 10-71.5 18.5q-50 20-88 58t-58 88q-11 29-18.5 71.5t-10 103-3 96.5 0 105.5 0.5 76.5-0.5 76.5 0 105.5 3 96.5 10 103 18.5 71.5q20 50 58 88t88 58q29 11 71.5 18.5t103 10 96.5 3 105.5 0 76.5-0.5 76.5 0.5 105.5 0 96.5-3 103-10 71.5-18.5q50-20 88-58t58-88q11-29 18.5-71.5t10-103 3-96.5 0-105.5-0.5-76.5 0.5-76.5 0-105.5-3-96.5-10-103-18.5-71.5q-20-50-58-88t-88-58q-29-11-71.5-18.5t-103-10-96.5-3-105.5 0-76.5 0.5zM1536 896q0 229-5 317-10 208-124 322t-322 124q-88 5-317 5t-317-5q-208-10-322-124t-124-322q-5-88-5-317t5-317q10-208 124-322t322-124q88-5 317-5t317 5q208 10 322 124t124 322q5 88 5 317z" }] } };
     moonO = { "moon-o": { "width": 1536, "height": 1792, "paths": [{ "d": "M1262 1303q-54 9-110 9-182 0-337-90t-245-245-90-337q0-192 104-357-201 60-328.5 229t-127.5 384q0 130 51 248.5t136.5 204 204 136.5 248.5 51q144 0 273.5-61.5t220.5-171.5zM1465 1218q-94 203-283.5 324.5t-413.5 121.5q-156 0-298-61t-245-164-164-245-61-298q0-153 57.5-292.5t156-241.5 235.5-164.5 290-68.5q44-2 61 39 18 41-15 72-86 78-131.5 181.5t-45.5 218.5q0 148 73 273t198 198 273 73q118 0 228-51 41-18 72 13 14 14 17.5 34t-4.5 38z" }] } };
-    whatsapp = { "whatsapp": { "width": 1536, "height": 1792, "paths": [{ "d": "M985 974q13 0 97.5 44t89.5 53q2 5 2 15 0 33-17 76-16 39-71 65.5t-102 26.5q-57 0-190-62-98-45-170-118t-148-185q-72-107-71-194v-8q3-91 74-158 24-22 52-22 6 0 18 1.5t19 1.5q19 0 26.5 6.5t15.5 27.5q8 20 33 88t25 75q0 21-34.5 57.5t-34.5 46.5q0 7 5 15 34 73 102 137 56 53 151 101 12 7 22 7 15 0 54-48.5t52-48.5zM782 1504q127 0 243.5-50t200.5-134 134-200.5 50-243.5-50-243.5-134-200.5-200.5-134-243.5-50-243.5 50-200.5 134-134 200.5-50 243.5q0 203 120 368l-79 233 242-77q158 104 345 104zM782 122q153 0 292.5 60t240.5 161 161 240.5 60 292.5-60 292.5-161 240.5-240.5 161-292.5 60q-195 0-365-94l-417 134 136-405q-108-178-108-389 0-153 60-292.5t161-240.5 240.5-161 292.5-60z" }] } };
   }
 });
 
@@ -1041,7 +1038,7 @@ var init_page_svelte = __esm({
 </div>`;
     });
     css$2 = {
-      code: `.cards-container.svelte-8fyv3z.svelte-8fyv3z{display:flex;flex-direction:column}img.svelte-8fyv3z.svelte-8fyv3z{width:100%;max-width:350px;height:250px;margin-bottom:1em;border-radius:20px;margin:0 auto}.card-container.svelte-8fyv3z.svelte-8fyv3z{margin-bottom:1em}.cards-container.svelte-8fyv3z .image-container.svelte-8fyv3z{padding-top:10px;display:flex;justify-content:center}#title.svelte-8fyv3z.svelte-8fyv3z{cursor:pointer;color:orange;font-size:1.7em;font-family:"Fira Code";text-align:center;margin-bottom:5px 0}#title.svelte-8fyv3z.svelte-8fyv3z:hover{text-decoration:underline}#contents.svelte-8fyv3z.svelte-8fyv3z{font-family:'Fira Code', monospace;padding:20px;line-height:1.5em}#dark.svelte-8fyv3z.svelte-8fyv3z{background-color:white}@media(min-width: 800px){.cards-container.svelte-8fyv3z.svelte-8fyv3z{display:flex;justify-content:center}.grid.svelte-8fyv3z.svelte-8fyv3z{display:grid;grid-template-columns:1fr 1fr}.image-container.svelte-8fyv3z.svelte-8fyv3z{align-self:center}}@media(min-width: 1150px){.grid.svelte-8fyv3z.svelte-8fyv3z{grid-template-columns:1fr 1fr 1fr}}`,
+      code: `.cards-container.svelte-9ohkm.svelte-9ohkm{display:flex;flex-direction:column}img.svelte-9ohkm.svelte-9ohkm{width:100%;max-width:300px;height:250px;margin-bottom:1em;border-radius:20px}.card-container.svelte-9ohkm.svelte-9ohkm{margin-bottom:1em}.cards-container.svelte-9ohkm .image-container.svelte-9ohkm{padding-top:10px;display:flex;justify-content:center}#title.svelte-9ohkm.svelte-9ohkm{cursor:pointer;color:orange;font-size:1.7em;font-family:"Fira Code";text-align:center;margin-bottom:5px 0}#title.svelte-9ohkm.svelte-9ohkm:hover{text-decoration:underline}#contents.svelte-9ohkm.svelte-9ohkm{font-family:'Fira Code', monospace;padding:20px;line-height:1.5em}#dark.svelte-9ohkm.svelte-9ohkm{background-color:white}@media(min-width: 800px){.cards-container.svelte-9ohkm.svelte-9ohkm{display:flex;justify-content:center}.grid.svelte-9ohkm.svelte-9ohkm{display:grid;grid-template-columns:1fr 1fr}.image-container.svelte-9ohkm.svelte-9ohkm{align-self:center}}@media(min-width: 1150px){.grid.svelte-9ohkm.svelte-9ohkm{grid-template-columns:1fr 1fr 1fr}}`,
       map: null
     };
     Card = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1092,17 +1089,17 @@ var init_page_svelte = __esm({
         { name: "Yoo Batiks", src: "/batiks.jpg" }
       ];
       $$result.css.add(css$2);
-      return `<div class="cards-container svelte-8fyv3z"><div class="grid svelte-8fyv3z">${each(images, (image) => {
-        return `<div class="card-container svelte-8fyv3z">
-<div class="image-container svelte-8fyv3z">
+      return `<div class="cards-container svelte-9ohkm"><div class="grid svelte-9ohkm">${each(images, (image) => {
+        return `<div class="card-container svelte-9ohkm">
+<div class="image-container svelte-9ohkm">
 ${validate_component(Src, "Lazy").$$render($$result, {}, {}, {
           default: () => {
-            return `<img${add_attribute("src", image.src, 0)}${add_attribute("alt", image.name, 0)}${add_attribute("id", "", 0)} class="svelte-8fyv3z">
+            return `<img${add_attribute("src", image.src, 0)}${add_attribute("alt", image.name, 0)}${add_attribute("id", "", 0)} class="svelte-9ohkm">
 `;
           }
         })}</div>
-<h3 id="title" class="svelte-8fyv3z">${escape(image.name)}</h3>
-<p id="contents" class="svelte-8fyv3z">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque magnam maxime optio tempore, quia, nisi deleniti soluta enim fugiat molestiae possimus natus fugit itaque quam architecto adipisci voluptatum a! Porro deserunt alias repellat eum quibusdam eius officia dolorum id ipsa.</p>
+<h3 id="title" class="svelte-9ohkm">${escape(image.name)}</h3>
+<p id="contents" class="svelte-9ohkm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque magnam maxime optio tempore, quia, nisi deleniti soluta enim fugiat molestiae possimus natus fugit itaque quam architecto adipisci voluptatum a! Porro deserunt alias repellat eum quibusdam eius officia dolorum id ipsa.</p>
 </div>`;
       })}</div>
 </div>`;
@@ -1157,8 +1154,8 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.js";
-    imports3 = ["_app/immutable/nodes/2.0963d235.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/index.b1fb2681.js"];
-    stylesheets3 = ["_app/immutable/assets/2.e2f29b35.css", "_app/immutable/assets/index.cb0c4400.css"];
+    imports3 = ["_app/immutable/nodes/2.94c5a37e.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/index.4fe0320c.js"];
+    stylesheets3 = ["_app/immutable/assets/2.b7e20370.css", "_app/immutable/assets/index.cb0c4400.css"];
     fonts3 = [];
   }
 });
@@ -1174,52 +1171,50 @@ var init_page_svelte2 = __esm({
     init_chunks();
     init_index2();
     css$22 = {
-      code: "h4.svelte-szv1t9{text-align:center;margin-bottom:5px}.visit-container.svelte-szv1t9{margin:10px 0}",
+      code: `h4.svelte-u7vp4m.svelte-u7vp4m{text-align:center;margin:10px 0;font-family:"Fira Code"}a.svelte-u7vp4m.svelte-u7vp4m{text-decoration:none}.icons.svelte-u7vp4m.svelte-u7vp4m{display:flex;justify-content:center;align-items:center}img.svelte-u7vp4m.svelte-u7vp4m{width:25px;height:25px;border-radius:50%;margin:0 1.2em;transition:all .5s linear}img[alt="Instagram"].svelte-u7vp4m.svelte-u7vp4m{border-radius:7px;background-color:blue}img[alt="Snapchat"].svelte-u7vp4m.svelte-u7vp4m{width:30px;height:30px}img.svelte-u7vp4m.svelte-u7vp4m:hover{transform:scale(1.1)}.name.svelte-u7vp4m.svelte-u7vp4m{position:absolute;top:1em;left:0;text-align:center;width:100vw;opacity:0;transition:all .5s linear;font-family:'Arimo', sans-serif}div.svelte-u7vp4m:hover h3.svelte-u7vp4m{opacity:1}#call.svelte-u7vp4m.svelte-u7vp4m{position:absolute;top:0;height:100vh;display:flex;align-items:center;right:1em}.circle.svelte-u7vp4m.svelte-u7vp4m{width:30px;height:30px;background-color:orange;border-radius:50%;display:flex;justify-content:center}a.svelte-u7vp4m .phone{color:black;height:100%}a.svelte-u7vp4m .phone-light{color:green;height:100%;font-weight:bolder}#light.svelte-u7vp4m.svelte-u7vp4m{background:antiquewhite;font-weight:bolder}`,
       map: null
     };
     ContactIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      const platformsIcons = [
+        {
+          name: "Instagram",
+          src: "/instagram.png",
+          link: "https://instagram.com/yooaesthetics?igshid=MzNINGNkZWQ4Mg=="
+        },
+        {
+          name: "WhatsApp",
+          src: "/whatsapp.png",
+          link: ""
+        },
+        {
+          name: "TikTok",
+          src: "/tiktok.png",
+          link: "https://www.tiktok.com/@yoo_gallery?_t=8dD4UoGxDQT&_r=1"
+        },
+        {
+          name: "Snapchat",
+          src: "/snapchat.png",
+          link: ""
+        }
+      ];
+      let h3Ref;
       $$result.css.add(css$22);
-      return `<div class="visit-container svelte-szv1t9"><h4 class="svelte-szv1t9">visit us on</h4>
-    <div class="icon-container">${validate_component(Icon, "Icon").$$render(
+      return `<div class="visit-container svelte-u7vp4m"><h4 class="svelte-u7vp4m">visit us on</h4>
+    <div class="icons svelte-u7vp4m">${each(platformsIcons, (icon) => {
+        return `<div class="link svelte-u7vp4m"><a href="${escape(icon.link, true) + "}"}" class="svelte-u7vp4m"><img${add_attribute("alt", icon.name, 0)}${add_attribute("src", icon.src, 0)} class="svelte-u7vp4m">
+        <h3 class="name svelte-u7vp4m"${add_attribute("this", h3Ref, 0)}>${escape("")}</h3></a>
+    </div>`;
+      })}</div>
+    <div id="call" class="svelte-u7vp4m"><div class="circle svelte-u7vp4m"${add_attribute("id", "", 0)}><a href="tel:+2348171983663" class="svelte-u7vp4m">${validate_component(Icon, "Icon").$$render(
         $$result,
         {
-          data: facebook,
-          scale: "1.5",
-          style: "margin-right: 12px; color: blue;"
+          data: phone,
+          class: "phone-light",
+          scale: "1"
         },
         {},
         {}
-      )}
-        ${validate_component(Icon, "Icon").$$render(
-        $$result,
-        {
-          data: instagram,
-          scale: "1.5",
-          style: "margin-right: 12px; color: orange;"
-        },
-        {},
-        {}
-      )}
-        ${validate_component(Icon, "Icon").$$render(
-        $$result,
-        {
-          data: twitter,
-          scale: "1.5",
-          style: "margin-right: 12px; color: lightblue"
-        },
-        {},
-        {}
-      )}
-        ${validate_component(Icon, "Icon").$$render(
-        $$result,
-        {
-          data: whatsapp,
-          scale: "1.5",
-          style: "color: lime;"
-        },
-        {},
-        {}
-      )}</div> 
+      )}</a></div></div>
     
 </div>`;
     });
@@ -1240,16 +1235,16 @@ var init_page_svelte2 = __esm({
 </div>`;
     });
     css3 = {
-      code: ".nav-icon.svelte-6i04k0.svelte-6i04k0{position:absolute;top:1em;left:1em}.theme-icon.svelte-6i04k0.svelte-6i04k0{position:absolute;top:1em;right:1em}.page-container.svelte-6i04k0.svelte-6i04k0{margin:0;padding:0;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.page-container.svelte-6i04k0 div header.svelte-6i04k0{cursor:pointer}.page-container.svelte-6i04k0 div header h1.svelte-6i04k0{font-weight:900;text-align:center;font-family:'Allura', cursive;font-size:2.5em;line-height:0.9em;background:linear-gradient(antiquewhite, orange);-webkit-background-clip:text;background-clip:text;color:transparent}main div.svelte-6i04k0 header h1.svelte-6i04k0:hover{opacity:80%}#yoo-light.svelte-6i04k0.svelte-6i04k0{background:linear-gradient(black, orange);-webkit-background-clip:text;background-clip:text;color:transparent}",
+      code: ".nav-icon.svelte-fcy9aq.svelte-fcy9aq{position:absolute;top:1em;left:1em}a.svelte-fcy9aq.svelte-fcy9aq{text-decoration:none}.theme-icon.svelte-fcy9aq.svelte-fcy9aq{position:absolute;top:1em;right:1em;z-index:2}.page-container.svelte-fcy9aq.svelte-fcy9aq{margin:0;padding:0;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.page-container.svelte-fcy9aq div header.svelte-fcy9aq{cursor:pointer}.page-container.svelte-fcy9aq div header h1.svelte-fcy9aq{font-weight:900;text-align:center;font-family:'Allura', cursive;font-size:2.5em;line-height:0.9em;background:linear-gradient(antiquewhite, orange);-webkit-background-clip:text;background-clip:text;color:transparent}main div.svelte-fcy9aq header h1.svelte-fcy9aq:hover{opacity:80%}#yoo-light.svelte-fcy9aq.svelte-fcy9aq{background:linear-gradient(black, orange);-webkit-background-clip:text;background-clip:text;color:transparent}",
       map: null
     };
     Page2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let themeColor;
       $$result.css.add(css3);
-      return `<div class="page-container svelte-6i04k0"><div class="nav-icon svelte-6i04k0">${validate_component(Icon, "Icon").$$render($$result, { data: navicon, scale: "1.2" }, {}, {})}</div>
+      return `<div class="page-container svelte-fcy9aq"><div class="nav-icon svelte-fcy9aq">${validate_component(Icon, "Icon").$$render($$result, { data: navicon, scale: "1.2" }, {}, {})}</div>
     
-    <div class="theme-icon svelte-6i04k0">${validate_component(Icon, "Icon").$$render($$result, { data: moonO, scale: "1.5" }, {}, {})}</div>
-         <div class="pageName svelte-6i04k0"><header class="svelte-6i04k0"><h1${add_attribute("id", "yoo", 0)} class="svelte-6i04k0"><a href="/" data-sveltekit-preload-data="tap">Yoo<br>Brands</a></h1></header></div>
+    <div class="theme-icon svelte-fcy9aq">${validate_component(Icon, "Icon").$$render($$result, { data: moonO, scale: "1.5" }, {}, {})}</div>
+         <div class="pageName svelte-fcy9aq"><header class="svelte-fcy9aq"><h1${add_attribute("id", "yoo", 0)} class="svelte-fcy9aq"><a href="/" data-sveltekit-preload-data="tap" class="svelte-fcy9aq">Yoo<br>Brands</a></h1></header></div>
     ${validate_component(Form, "Form").$$render($$result, { themeColor }, {}, {})}
      ${validate_component(ContactIcon, "ContactIcon").$$render($$result, {}, {}, {})}
 </div>`;
@@ -1271,8 +1266,8 @@ var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
-    imports4 = ["_app/immutable/nodes/3.24cef0f7.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/index.b1fb2681.js"];
-    stylesheets4 = ["_app/immutable/assets/3.b395f977.css", "_app/immutable/assets/index.cb0c4400.css"];
+    imports4 = ["_app/immutable/nodes/3.bcbce94e.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/index.4fe0320c.js"];
+    stylesheets4 = ["_app/immutable/assets/3.93948f75.css", "_app/immutable/assets/index.cb0c4400.css"];
     fonts4 = [];
   }
 });
@@ -1443,7 +1438,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1bc4xi6"
+  version_hash: "q2qpi4"
 };
 function get_hooks() {
   return {};
@@ -4743,10 +4738,10 @@ _manifest = new WeakMap();
 var manifest = {
   appDir: "_app",
   appPath: "_app",
-  assets: /* @__PURE__ */ new Set(["Aesthetics.jpg", "batiks.jpg", "beads.jpg", "camera.jpg", "embroidery.jpg", "favicon.png", "grains.jpg", "graphic.jpg", "painting.jpg", "paws.png", "pottery.png", "resin.jpg", "scribblings.png", "sculpture.jpg", "stitches.jpg", "tie-dye.jpg"]),
+  assets: /* @__PURE__ */ new Set(["Aesthetics.jpg", "batiks.jpg", "beads.jpg", "camera.jpg", "embroidery.jpg", "favicon.png", "grains.jpg", "graphic.jpg", "instagram.png", "painting.jpg", "paws.png", "pottery.png", "resin.jpg", "scribblings.png", "sculpture.jpg", "snapchat.png", "stitches.jpg", "tie-dye.jpg", "tiktok.png", "whatsapp.png"]),
   mimeTypes: { ".jpg": "image/jpeg", ".png": "image/png" },
   _: {
-    client: { "start": "_app/immutable/entry/start.ab90d445.js", "app": "_app/immutable/entry/app.7b6f0e48.js", "imports": ["_app/immutable/entry/start.ab90d445.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.470f255c.js", "_app/immutable/entry/app.7b6f0e48.js", "_app/immutable/chunks/index.f9b9fb40.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.aea61c7a.js", "app": "_app/immutable/entry/app.7f0baf19.js", "imports": ["_app/immutable/entry/start.aea61c7a.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.e9341ba0.js", "_app/immutable/entry/app.7f0baf19.js", "_app/immutable/chunks/index.f9b9fb40.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
