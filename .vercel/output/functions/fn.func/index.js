@@ -643,7 +643,7 @@ var init__ = __esm({
     index = 0;
     component = async () => (await Promise.resolve().then(() => (init_layout_svelte(), layout_svelte_exports))).default;
     universal_id = "src/routes/+layout.js";
-    imports = ["_app/immutable/nodes/0.12a29b29.js", "_app/immutable/chunks/index.f9b9fb40.js"];
+    imports = ["_app/immutable/nodes/0.6612711b.js", "_app/immutable/chunks/index.ac056c30.js"];
     stylesheets = [];
     fonts = [];
   }
@@ -703,7 +703,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.c2c4f5cf.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.e9341ba0.js"];
+    imports2 = ["_app/immutable/nodes/1.43006d52.js", "_app/immutable/chunks/index.ac056c30.js", "_app/immutable/chunks/singletons.94c66e57.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -754,10 +754,53 @@ function normaliseData(data) {
   }
   return iconData;
 }
-var Raw, css, Svg, Object_1, outerScale, Icon, phone, navicon, moonO;
+var placeholderClass, Placeholder, Src, Raw, css, Svg, Object_1, outerScale, Icon, phone, navicon, moonO;
 var init_index2 = __esm({
   ".svelte-kit/output/server/chunks/index2.js"() {
     init_chunks();
+    placeholderClass = "svelte-lazy-placeholder";
+    Placeholder = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { placeholder = null } = $$props;
+      let { placeholderProps = null } = $$props;
+      if ($$props.placeholder === void 0 && $$bindings.placeholder && placeholder !== void 0)
+        $$bindings.placeholder(placeholder);
+      if ($$props.placeholderProps === void 0 && $$bindings.placeholderProps && placeholderProps !== void 0)
+        $$bindings.placeholderProps(placeholderProps);
+      return `${placeholder ? `<div${add_attribute("class", placeholderClass, 0)}>${typeof placeholder === "string" ? `<div>${escape(placeholder)}</div>` : `${["function", "object"].includes(typeof placeholder) ? `${validate_component(placeholder || missing_component, "svelte:component").$$render($$result, Object.assign({}, placeholderProps), {}, {})}` : ``}`}</div>` : ``}`;
+    });
+    Src = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { height = 0 } = $$props;
+      let { offset = 150 } = $$props;
+      let { fadeOption = { delay: 0, duration: 400 } } = $$props;
+      let { resetHeightDelay = 0 } = $$props;
+      let { onload = null } = $$props;
+      let { placeholder = null } = $$props;
+      let { placeholderProps = null } = $$props;
+      let { class: className = "" } = $$props;
+      const rootClass = "svelte-lazy" + (className ? " " + className : "");
+      const rootInitialHeight = getStyleHeight();
+      function getStyleHeight() {
+        return typeof height === "number" ? height + "px" : height;
+      }
+      if ($$props.height === void 0 && $$bindings.height && height !== void 0)
+        $$bindings.height(height);
+      if ($$props.offset === void 0 && $$bindings.offset && offset !== void 0)
+        $$bindings.offset(offset);
+      if ($$props.fadeOption === void 0 && $$bindings.fadeOption && fadeOption !== void 0)
+        $$bindings.fadeOption(fadeOption);
+      if ($$props.resetHeightDelay === void 0 && $$bindings.resetHeightDelay && resetHeightDelay !== void 0)
+        $$bindings.resetHeightDelay(resetHeightDelay);
+      if ($$props.onload === void 0 && $$bindings.onload && onload !== void 0)
+        $$bindings.onload(onload);
+      if ($$props.placeholder === void 0 && $$bindings.placeholder && placeholder !== void 0)
+        $$bindings.placeholder(placeholder);
+      if ($$props.placeholderProps === void 0 && $$bindings.placeholderProps && placeholderProps !== void 0)
+        $$bindings.placeholderProps(placeholderProps);
+      if ($$props.class === void 0 && $$bindings.class && className !== void 0)
+        $$bindings.class(className);
+      return `<div${add_attribute("class", rootClass, 0)} style="${"height: " + escape(rootInitialHeight, true)}">${`${placeholder ? `${validate_component(Placeholder, "Placeholder").$$render($$result, { placeholder, placeholderProps }, {}, {})}` : ``}`}
+</div>`;
+    });
     Raw = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let cursor = 870711;
       function getId() {
@@ -989,56 +1032,13 @@ var page_svelte_exports = {};
 __export(page_svelte_exports, {
   default: () => Page
 });
-var placeholderClass, Placeholder, Src, css$2, Card, css$1, Info, css2, NavigationBar, Page;
+var css$2, Card, css$1, Info, css2, NavigationBar, Page;
 var init_page_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/_page.svelte.js"() {
     init_chunks();
     init_index2();
-    placeholderClass = "svelte-lazy-placeholder";
-    Placeholder = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let { placeholder = null } = $$props;
-      let { placeholderProps = null } = $$props;
-      if ($$props.placeholder === void 0 && $$bindings.placeholder && placeholder !== void 0)
-        $$bindings.placeholder(placeholder);
-      if ($$props.placeholderProps === void 0 && $$bindings.placeholderProps && placeholderProps !== void 0)
-        $$bindings.placeholderProps(placeholderProps);
-      return `${placeholder ? `<div${add_attribute("class", placeholderClass, 0)}>${typeof placeholder === "string" ? `<div>${escape(placeholder)}</div>` : `${["function", "object"].includes(typeof placeholder) ? `${validate_component(placeholder || missing_component, "svelte:component").$$render($$result, Object.assign({}, placeholderProps), {}, {})}` : ``}`}</div>` : ``}`;
-    });
-    Src = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let { height = 0 } = $$props;
-      let { offset = 150 } = $$props;
-      let { fadeOption = { delay: 0, duration: 400 } } = $$props;
-      let { resetHeightDelay = 0 } = $$props;
-      let { onload = null } = $$props;
-      let { placeholder = null } = $$props;
-      let { placeholderProps = null } = $$props;
-      let { class: className = "" } = $$props;
-      const rootClass = "svelte-lazy" + (className ? " " + className : "");
-      const rootInitialHeight = getStyleHeight();
-      function getStyleHeight() {
-        return typeof height === "number" ? height + "px" : height;
-      }
-      if ($$props.height === void 0 && $$bindings.height && height !== void 0)
-        $$bindings.height(height);
-      if ($$props.offset === void 0 && $$bindings.offset && offset !== void 0)
-        $$bindings.offset(offset);
-      if ($$props.fadeOption === void 0 && $$bindings.fadeOption && fadeOption !== void 0)
-        $$bindings.fadeOption(fadeOption);
-      if ($$props.resetHeightDelay === void 0 && $$bindings.resetHeightDelay && resetHeightDelay !== void 0)
-        $$bindings.resetHeightDelay(resetHeightDelay);
-      if ($$props.onload === void 0 && $$bindings.onload && onload !== void 0)
-        $$bindings.onload(onload);
-      if ($$props.placeholder === void 0 && $$bindings.placeholder && placeholder !== void 0)
-        $$bindings.placeholder(placeholder);
-      if ($$props.placeholderProps === void 0 && $$bindings.placeholderProps && placeholderProps !== void 0)
-        $$bindings.placeholderProps(placeholderProps);
-      if ($$props.class === void 0 && $$bindings.class && className !== void 0)
-        $$bindings.class(className);
-      return `<div${add_attribute("class", rootClass, 0)} style="${"height: " + escape(rootInitialHeight, true)}">${`${placeholder ? `${validate_component(Placeholder, "Placeholder").$$render($$result, { placeholder, placeholderProps }, {}, {})}` : ``}`}
-</div>`;
-    });
     css$2 = {
-      code: `.cards-container.svelte-9ohkm.svelte-9ohkm{display:flex;flex-direction:column}img.svelte-9ohkm.svelte-9ohkm{width:100%;max-width:300px;height:250px;margin-bottom:1em;border-radius:20px}.card-container.svelte-9ohkm.svelte-9ohkm{margin-bottom:1em}.cards-container.svelte-9ohkm .image-container.svelte-9ohkm{padding-top:10px;display:flex;justify-content:center}#title.svelte-9ohkm.svelte-9ohkm{cursor:pointer;color:orange;font-size:1.7em;font-family:"Fira Code";text-align:center;margin-bottom:5px 0}#title.svelte-9ohkm.svelte-9ohkm:hover{text-decoration:underline}#contents.svelte-9ohkm.svelte-9ohkm{font-family:'Fira Code', monospace;padding:20px;line-height:1.5em}#dark.svelte-9ohkm.svelte-9ohkm{background-color:white}@media(min-width: 800px){.cards-container.svelte-9ohkm.svelte-9ohkm{display:flex;justify-content:center}.grid.svelte-9ohkm.svelte-9ohkm{display:grid;grid-template-columns:1fr 1fr}.image-container.svelte-9ohkm.svelte-9ohkm{align-self:center}}@media(min-width: 1150px){.grid.svelte-9ohkm.svelte-9ohkm{grid-template-columns:1fr 1fr 1fr}}`,
+      code: `.cards-container.svelte-5fhyi6.svelte-5fhyi6{display:flex;flex-direction:column}img.svelte-5fhyi6.svelte-5fhyi6{width:100%;max-width:400px;height:250px;margin-bottom:1em;border-radius:20px}.card-container.svelte-5fhyi6.svelte-5fhyi6{margin-bottom:1em}.cards-container.svelte-5fhyi6 .image-container.svelte-5fhyi6{padding-top:10px;display:flex;justify-content:center}#title.svelte-5fhyi6.svelte-5fhyi6{cursor:pointer;color:crimson;font-size:1.7em;font-family:"Fira Code";text-align:center;margin-bottom:5px 0}#title.svelte-5fhyi6.svelte-5fhyi6:hover{text-decoration:underline}#contents.svelte-5fhyi6.svelte-5fhyi6{font-family:'Fira Code', monospace;padding:20px;line-height:1.5em}#dark.svelte-5fhyi6.svelte-5fhyi6{background-color:white}@media(min-width: 800px){.cards-container.svelte-5fhyi6.svelte-5fhyi6{display:flex;justify-content:center}.grid.svelte-5fhyi6.svelte-5fhyi6{display:grid;grid-template-columns:1fr 1fr}.image-container.svelte-5fhyi6.svelte-5fhyi6{align-self:center}}@media(min-width: 1150px){.grid.svelte-5fhyi6.svelte-5fhyi6{grid-template-columns:1fr 1fr 1fr}}`,
       map: null
     };
     Card = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1089,28 +1089,28 @@ var init_page_svelte = __esm({
         { name: "Yoo Batiks", src: "/batiks.jpg" }
       ];
       $$result.css.add(css$2);
-      return `<div class="cards-container svelte-9ohkm"><div class="grid svelte-9ohkm">${each(images, (image) => {
-        return `<div class="card-container svelte-9ohkm">
-<div class="image-container svelte-9ohkm">
+      return `<div class="cards-container svelte-5fhyi6"><div class="grid svelte-5fhyi6">${each(images, (image) => {
+        return `<div class="card-container svelte-5fhyi6">
+<div class="image-container svelte-5fhyi6">
 ${validate_component(Src, "Lazy").$$render($$result, {}, {}, {
           default: () => {
-            return `<img${add_attribute("src", image.src, 0)}${add_attribute("alt", image.name, 0)}${add_attribute("id", "", 0)} class="svelte-9ohkm">
+            return `<img${add_attribute("src", image.src, 0)}${add_attribute("alt", image.name, 0)}${add_attribute("id", "", 0)} class="svelte-5fhyi6">
 `;
           }
         })}</div>
-<h3 id="title" class="svelte-9ohkm">${escape(image.name)}</h3>
-<p id="contents" class="svelte-9ohkm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque magnam maxime optio tempore, quia, nisi deleniti soluta enim fugiat molestiae possimus natus fugit itaque quam architecto adipisci voluptatum a! Porro deserunt alias repellat eum quibusdam eius officia dolorum id ipsa.</p>
+<h3 id="title" class="svelte-5fhyi6">${escape(image.name)}</h3>
+<p id="contents" class="svelte-5fhyi6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque magnam maxime optio tempore, quia, nisi deleniti soluta enim fugiat molestiae possimus natus fugit itaque quam architecto adipisci voluptatum a! Porro deserunt alias repellat eum quibusdam eius officia dolorum id ipsa.</p>
 </div>`;
       })}</div>
 </div>`;
     });
     css$1 = {
-      code: "main.svelte-ll46dk.svelte-ll46dk{margin:30px 0}main.svelte-ll46dk article.svelte-ll46dk{line-height:2em;font-family:'Mukta', sans-serif}main.svelte-ll46dk article.svelte-ll46dk::first-letter{color:orange;font-weight:bolder;font-size:1.4em;font-family:cursive}@media(min-width: 650px){main.svelte-ll46dk article.svelte-ll46dk{font-size:1.5em}}@media(min-width: 900px){main.svelte-ll46dk article.svelte-ll46dk{font-size:1.7em}}",
+      code: "main.svelte-1qcdupc.svelte-1qcdupc{margin:30px 0}main.svelte-1qcdupc article.svelte-1qcdupc{line-height:2em;font-family:'Mukta', sans-serif}main.svelte-1qcdupc article.svelte-1qcdupc::first-letter{color:orange;font-weight:bolder;font-size:1.4em;font-family:cursive}@media(min-width: 650px){main.svelte-1qcdupc article.svelte-1qcdupc{font-size:1.2em}}@media(min-width: 900px){main.svelte-1qcdupc article.svelte-1qcdupc{font-size:1.4em}}",
       map: null
     };
     Info = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$1);
-      return `<main class="svelte-ll46dk"><section><article class="svelte-ll46dk"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum ad obcaecati, sint, blanditiis est cupiditate autem aut velit reprehenderit neque? Explicabo laborum, fugit necessitatibus atque quia in magnam nobis eius eligendi exercitationem, repellendus voluptate architecto fuga nulla vel ab facere aliquid, voluptates nisi iste! Fugiat iusto cupiditate voluptatum labore perspiciatis modi consequatur! Et itaque veniam ex, natus corporis veritatis ipsa provident officia, velit deleniti quidem harum accusantium rem labore id tempore dicta consectetur modi nisi corrupti. Cum, voluptate cumque?</p></article></section>
+      return `<main class="svelte-1qcdupc"><section><article class="svelte-1qcdupc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum ad obcaecati, sint, blanditiis est cupiditate autem aut velit reprehenderit neque? Explicabo laborum, fugit necessitatibus atque quia in magnam nobis eius eligendi exercitationem, repellendus voluptate architecto fuga nulla vel ab facere aliquid, voluptates nisi iste! Fugiat iusto cupiditate voluptatum labore perspiciatis modi consequatur! Et itaque veniam ex, natus corporis veritatis ipsa provident officia, velit deleniti quidem harum accusantium rem labore id tempore dicta consectetur modi nisi corrupti. Cum, voluptate cumque?</p></article></section>
 </main>`;
     });
     css2 = {
@@ -1154,8 +1154,8 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.js";
-    imports3 = ["_app/immutable/nodes/2.94c5a37e.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/index.4fe0320c.js"];
-    stylesheets3 = ["_app/immutable/assets/2.b7e20370.css", "_app/immutable/assets/index.cb0c4400.css"];
+    imports3 = ["_app/immutable/nodes/2.bae48b08.js", "_app/immutable/chunks/index.ac056c30.js", "_app/immutable/chunks/index.15a3bee2.js"];
+    stylesheets3 = ["_app/immutable/assets/2.b3846ecc.css", "_app/immutable/assets/index.cb0c4400.css"];
     fonts3 = [];
   }
 });
@@ -1171,7 +1171,7 @@ var init_page_svelte2 = __esm({
     init_chunks();
     init_index2();
     css$22 = {
-      code: `h4.svelte-u7vp4m.svelte-u7vp4m{text-align:center;margin:10px 0;font-family:"Fira Code"}a.svelte-u7vp4m.svelte-u7vp4m{text-decoration:none}.icons.svelte-u7vp4m.svelte-u7vp4m{display:flex;justify-content:center;align-items:center}img.svelte-u7vp4m.svelte-u7vp4m{width:25px;height:25px;border-radius:50%;margin:0 1.2em;transition:all .5s linear}img[alt="Instagram"].svelte-u7vp4m.svelte-u7vp4m{border-radius:7px;background-color:blue}img[alt="Snapchat"].svelte-u7vp4m.svelte-u7vp4m{width:30px;height:30px}img.svelte-u7vp4m.svelte-u7vp4m:hover{transform:scale(1.1)}.name.svelte-u7vp4m.svelte-u7vp4m{position:absolute;top:1em;left:0;text-align:center;width:100vw;opacity:0;transition:all .5s linear;font-family:'Arimo', sans-serif}div.svelte-u7vp4m:hover h3.svelte-u7vp4m{opacity:1}#call.svelte-u7vp4m.svelte-u7vp4m{position:absolute;top:0;height:100vh;display:flex;align-items:center;right:1em}.circle.svelte-u7vp4m.svelte-u7vp4m{width:30px;height:30px;background-color:orange;border-radius:50%;display:flex;justify-content:center}a.svelte-u7vp4m .phone{color:black;height:100%}a.svelte-u7vp4m .phone-light{color:green;height:100%;font-weight:bolder}#light.svelte-u7vp4m.svelte-u7vp4m{background:antiquewhite;font-weight:bolder}`,
+      code: `h4.svelte-1n209jb.svelte-1n209jb{text-align:center;margin:10px 0;font-family:"Fira Code"}a.svelte-1n209jb.svelte-1n209jb{text-decoration:none}.icons.svelte-1n209jb.svelte-1n209jb{display:flex;justify-content:center;align-items:center}img.svelte-1n209jb.svelte-1n209jb{width:25px;height:25px;border-radius:50%;margin:0 1.2em;transition:all .5s linear}img[alt="Instagram"].svelte-1n209jb.svelte-1n209jb{border-radius:7px}img.svelte-1n209jb.svelte-1n209jb:hover{transform:scale(1.1)}.name.svelte-1n209jb.svelte-1n209jb{position:absolute;top:1em;left:0;text-align:center;width:100vw;opacity:0;transition:all .5s linear;font-family:'Arimo', sans-serif}div.svelte-1n209jb:hover h3.svelte-1n209jb{opacity:1}#call.svelte-1n209jb.svelte-1n209jb{position:absolute;top:0;height:100vh;display:flex;align-items:center;right:1em}.circle.svelte-1n209jb.svelte-1n209jb{width:30px;height:30px;background-color:orange;border-radius:50%;display:flex;justify-content:center}a.svelte-1n209jb .phone{color:black;height:100%}a.svelte-1n209jb .phone-light{color:green;height:100%;font-weight:bolder}#light.svelte-1n209jb.svelte-1n209jb{background:antiquewhite;font-weight:bolder}`,
       map: null
     };
     ContactIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1199,13 +1199,18 @@ var init_page_svelte2 = __esm({
       ];
       let h3Ref;
       $$result.css.add(css$22);
-      return `<div class="visit-container svelte-u7vp4m"><h4 class="svelte-u7vp4m">visit us on</h4>
-    <div class="icons svelte-u7vp4m">${each(platformsIcons, (icon) => {
-        return `<div class="link svelte-u7vp4m"><a href="${escape(icon.link, true) + "}"}" class="svelte-u7vp4m"><img${add_attribute("alt", icon.name, 0)}${add_attribute("src", icon.src, 0)} class="svelte-u7vp4m">
-        <h3 class="name svelte-u7vp4m"${add_attribute("this", h3Ref, 0)}>${escape("")}</h3></a>
+      return `<div class="visit-container svelte-1n209jb"><h4 class="svelte-1n209jb">visit us on</h4>
+    <div class="icons svelte-1n209jb">${each(platformsIcons, (icon) => {
+        return `<div class="link svelte-1n209jb"><a href="${escape(icon.link, true) + "}"}" class="svelte-1n209jb">${validate_component(Src, "Lazy").$$render($$result, {}, {}, {
+          default: () => {
+            return `<img${add_attribute("alt", icon.name, 0)}${add_attribute("src", icon.src, 0)} class="svelte-1n209jb">
+        `;
+          }
+        })}
+        <h3 class="name svelte-1n209jb"${add_attribute("this", h3Ref, 0)}>${escape("")}</h3></a>
     </div>`;
       })}</div>
-    <div id="call" class="svelte-u7vp4m"><div class="circle svelte-u7vp4m"${add_attribute("id", "", 0)}><a href="tel:+2348171983663" class="svelte-u7vp4m">${validate_component(Icon, "Icon").$$render(
+    <div id="call" class="svelte-1n209jb"><div class="circle svelte-1n209jb"${add_attribute("id", "", 0)}><a href="tel:+2348171983663" class="svelte-1n209jb">${validate_component(Icon, "Icon").$$render(
         $$result,
         {
           data: phone,
@@ -1266,8 +1271,8 @@ var init__4 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
-    imports4 = ["_app/immutable/nodes/3.bcbce94e.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/index.4fe0320c.js"];
-    stylesheets4 = ["_app/immutable/assets/3.93948f75.css", "_app/immutable/assets/index.cb0c4400.css"];
+    imports4 = ["_app/immutable/nodes/3.a72ca151.js", "_app/immutable/chunks/index.ac056c30.js", "_app/immutable/chunks/index.15a3bee2.js"];
+    stylesheets4 = ["_app/immutable/assets/3.f4ef9014.css", "_app/immutable/assets/index.cb0c4400.css"];
     fonts4 = [];
   }
 });
@@ -1438,7 +1443,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "q2qpi4"
+  version_hash: "9d049c"
 };
 function get_hooks() {
   return {};
@@ -4741,7 +4746,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["Aesthetics.jpg", "batiks.jpg", "beads.jpg", "camera.jpg", "embroidery.jpg", "favicon.png", "grains.jpg", "graphic.jpg", "instagram.png", "painting.jpg", "paws.png", "pottery.png", "resin.jpg", "scribblings.png", "sculpture.jpg", "snapchat.png", "stitches.jpg", "tie-dye.jpg", "tiktok.png", "whatsapp.png"]),
   mimeTypes: { ".jpg": "image/jpeg", ".png": "image/png" },
   _: {
-    client: { "start": "_app/immutable/entry/start.aea61c7a.js", "app": "_app/immutable/entry/app.7f0baf19.js", "imports": ["_app/immutable/entry/start.aea61c7a.js", "_app/immutable/chunks/index.f9b9fb40.js", "_app/immutable/chunks/singletons.e9341ba0.js", "_app/immutable/entry/app.7f0baf19.js", "_app/immutable/chunks/index.f9b9fb40.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.284a4cd2.js", "app": "_app/immutable/entry/app.d0da20fa.js", "imports": ["_app/immutable/entry/start.284a4cd2.js", "_app/immutable/chunks/index.ac056c30.js", "_app/immutable/chunks/singletons.94c66e57.js", "_app/immutable/entry/app.d0da20fa.js", "_app/immutable/chunks/index.ac056c30.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

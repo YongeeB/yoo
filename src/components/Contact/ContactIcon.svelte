@@ -7,6 +7,7 @@
 
     import { Icon } from "svelte-awesome";
     import {phone} from "svelte-awesome/icons";
+    import Lazy from "svelte-lazy"
     
     let theme;
 
@@ -41,7 +42,8 @@
     let name;
    
     function handleHover(e){
-        const eName = e.target.childNodes[0].childNodes[0].alt;
+        const eName = e.target.childNodes[0].childNodes[0].childNodes[0].childNodes[0].alt
+
         h3Ref.textContent = eName;
         name = eName;
 
@@ -55,7 +57,9 @@
          {#each platformsIcons as icon}
     <div on:mouseenter={(e)=>handleHover(e)} class="link">
     <a href={icon.link}}>
+        <Lazy>
         <img alt={icon.name} src={icon.src}/>
+        </Lazy>
         <h3 bind:this={h3Ref} class="name">{""}</h3>
     </a>
     </div>
@@ -98,12 +102,6 @@
 
     img[alt="Instagram"]{
          border-radius: 7px;
-         background-color: blue;
-    }
-
-    img[alt="Snapchat"]{
-         width: 30px;
-         height: 30px;
     }
 
     img:hover{

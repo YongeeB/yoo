@@ -98,7 +98,7 @@
     }
     img {
         width: 100%;
-        max-width: 300px;
+        max-width: 400px;
         height: 250px;
         margin-bottom: 1em;
         border-radius: 20px;
@@ -117,7 +117,7 @@
 
     #title {
         cursor: pointer;
-        color: orange;
+        color: crimson;
         font-size: 1.7em;
         font-family: "Fira Code";
         text-align: center;

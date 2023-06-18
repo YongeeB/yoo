@@ -25,13 +25,13 @@
 
     @media(min-width: 650px){
         main article {
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
     }
 
     @media(min-width: 900px){
         main article {
-            font-size: 1.7em;
+            font-size: 1.4em;
         }
     }
 </style>
